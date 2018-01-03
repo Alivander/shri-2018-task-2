@@ -21,26 +21,27 @@
       <div  class="index-page__date-time">
 
         <section class="date index-page__date">
+
           <h2 class="visually-hidden">Выбор даты</h2>
 
-          <button class="slider-button slider-button--prev date__button-prev" type="button">
+          <button class="round-button date__button-prev" type="button">
             <span class="visually-hidden">Предыдущий день</span>
           </button>
           <span class="date__active-date">14 дек · Сегодня</span>
-          <button class="slider-button slider-button--next date__button-next" type="button">
+          <button class="round-button date__button-next" type="button">
             <span class="visually-hidden">Следующий день</span>
           </button>
 
           <div class="calendar calendar--hidden calendar--shown">
 
             <div class="calendar__header">
-              <button class="slider-button slider-button--prev calendar__button-prev" type="button">
+              <button class="round-button calendar__button-prev" type="button">
                 <span class="visually-hidden">Предыдущий месяц</span>
               </button>
               <form class="calendar__form" method="get" action="https://echo.htmlacademy.ru">
                 <input class="input calendar__input" type="date">
               </form>
-              <button class="slider-button slider-button--prev calendar__button-next" type="button">
+              <button class="round-button calendar__button-next" type="button">
                 <span class="visually-hidden">Следующий месяц</span>
               </button>
             </div>
@@ -402,11 +403,17 @@
       </div>
 
       <section class="index-page__diagram">
+
         <h2 class="visually-hidden">График бронирования переговорок</h2>
 
         <table class="diagram">
-          <caption class="diagram__floor">7 этаж</caption>
+
+          <caption class="diagram__floor">
+            <h3 class="diagram__floor-title">7 этаж</h3>
+          </caption>
+
           <tbody class="diagram__body">
+
             <tr class="diagram__row">
               <td class="diagram__room">
                 <h4 class="diagram__room-title">Ржавый Фред</h4>
@@ -416,24 +423,60 @@
                 <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
               </td>
             </tr>
+
             <tr class="diagram__row">
               <td class="diagram__room">
                 <h4 class="diagram__room-title">Прачечная</h4>
                 <span class="diagram__room-capacity">до 10 человек</span>
               </td>
               <td class="diagram__events">
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
                 <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
               </td>
             </tr>
+
             <tr class="diagram__row">
               <td class="diagram__room">
                 <h4 class="diagram__room-title">Жёлтый дом</h4>
                 <span class="diagram__room-capacity">до 10 человек</span>
               </td>
               <td class="diagram__events">
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
                 <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
               </td>
             </tr>
+
             <tr class="diagram__row">
               <td class="diagram__room">
                 <h4 class="diagram__room-title">Оранжевый тюльпан</h4>
@@ -443,89 +486,266 @@
                 <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
               </td>
             </tr>
+
           </tbody>
         </table>
 
         <table class="diagram">
-          <caption class="diagram__floor">6 этаж</caption>
+
+          <caption class="diagram__floor">
+            <h3 class="diagram__floor-title">6 этаж</h3>
+          </caption>
+
           <tbody class="diagram__body">
+
             <tr class="diagram__row">
               <td class="diagram__room">
                 <h4 class="diagram__room-title">Джокер</h4>
                 <span class="diagram__room-capacity">3-6 человек</span>
               </td>
               <td class="diagram__events">
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
                 <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
               </td>
             </tr>
+
             <tr class="diagram__row">
               <td class="diagram__room">
                 <h4 class="diagram__room-title">Мариванна</h4>
                 <span class="diagram__room-capacity">3-6 человек</span>
               </td>
               <td class="diagram__events">
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
                 <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
               </td>
             </tr>
+
             <tr class="diagram__row">
               <td class="diagram__room">
                 <h4 class="diagram__room-title">Тонкий Боб</h4>
                 <span class="diagram__room-capacity">3-6 человек</span>
               </td>
               <td class="diagram__events">
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
                 <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
               </td>
             </tr>
+
             <tr class="diagram__row">
               <td class="diagram__room">
                 <h4 class="diagram__room-title">Чёрная вдова</h4>
                 <span class="diagram__room-capacity">3-6 человек</span>
               </td>
               <td class="diagram__events">
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
                 <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
               </td>
             </tr>
-            <table class="diagram">
-              <caption class="diagram__floor">7 этаж</caption>
-              <tbody class="diagram__body">
-                <tr class="diagram__row">
-                  <td class="diagram__room">
-                    <h4 class="diagram__room-title">Ржавый Фред</h4>
-                    <span class="diagram__room-capacity">3-6 человек</span>
-                  </td>
-                  <td class="diagram__events">
-                    <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
-                  </td>
-                </tr>
-                <tr class="diagram__row">
-                  <td class="diagram__room">
-                    <h4 class="diagram__room-title">Прачечная</h4>
-                    <span class="diagram__room-capacity">до 10 человек</span>
-                  </td>
-                  <td class="diagram__events">
-                    <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
-                  </td>
-                </tr>
-                <tr class="diagram__row">
-                  <td class="diagram__room">
-                    <h4 class="diagram__room-title">Жёлтый дом</h4>
-                    <span class="diagram__room-capacity">до 10 человек</span>
-                  </td>
-                  <td class="diagram__events">
-                    <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
-                  </td>
-                </tr>
-                <tr class="diagram__row">
-                  <td class="diagram__room">
-                    <h4 class="diagram__room-title">Белорусский ликёр</h4>
-                    <span class="diagram__room-capacity">3-6 человек</span>
-                  </td>
-                  <td class="diagram__events">
-                    <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+
+            <tr class="diagram__row">
+              <td class="diagram__room">
+                <h4 class="diagram__room-title">Белорусский ликёр</h4>
+                <span class="diagram__room-capacity">3-6 человек</span>
+              </td>
+              <td class="diagram__events">
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <div class="diagram__event">
+                  <div class="event diagram__event-tooltip">
+                    <h5 class="event__title">Рассуждения о высоком</h5>
+                    <p class="event__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="event__users">
+                      <b class="event__first-user">Дарт Вейдер</b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button event__update" href="#">Редактировать встречу</a>
+                  </div>
+                </div>
+                <a class="button button--blue button--plus" href="#">Создать встречу в этой переговорке</a>
+              </td>
+            </tr>
+            
           </tbody>
         </table>
 
