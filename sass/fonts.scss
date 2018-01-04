@@ -1,23 +1,23 @@
 @font-face {
-  font-family: 'HelveticaNeueCyr-Roman';
+  font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 400;
-  src: local('HelveticaNeue'), local('Helvetica Neue'), local('HelveticaNeueCyr-Roman'), url(../fonts/HelveticaNeueCyr-Roman.woff2) format('woff2');
+  src: local('Helvetica Neue'), local('HelveticaNeue'), url(../fonts/HelveticaNeue.woff2) format('woff2');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeueCyr-Medium';
+  font-family: 'Helvetica Neue Medium';
   font-style: normal;
   font-weight: 500;
-  src: local('HelveticaNeue-Medium'), local('Helvetica Neue Medium'), local('HelveticaNeueCyr-Medium'), url(../fonts/HelveticaNeueCyr-Roman.woff2) format('woff2');
+  src: local('Helvetica Neue Medium'), local('Helvetica Neue Medium'), local('HelveticaNeue-Medium'), url(../fonts/HelveticaNeue-Medium.woff2) format('woff2');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeueCyr-Bold';
+  font-family: 'Helvetica Neue Bold';
   font-style: normal;
   font-weight: 500;
-  src: local('HelveticaNeue-Bold'), local('Helvetica Neue Bold'), local('HelveticaNeueCyr-Bold'), url(../fonts/HelveticaNeueCyr-Roman.woff2) format('woff2');
+  src: local('Helvetica Neue Bold'), local('Helvetica Neue Bold'), local('HelveticaNeue-Bold'), url(../fonts/HelveticaNeue-Bold.woff2) format('woff2');
   font-display: swap;
 }
