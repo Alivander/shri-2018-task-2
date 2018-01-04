@@ -13,14 +13,15 @@ var cssmin = require("gulp-csso");
 
 var jsmin = require('gulp-uglyfly');
 
-var imagemin =require('gulp-imagemin');
+var imagemin = require('gulp-imagemin');
 
-var run =require('run-sequence');
+var run = require('run-sequence');
 var rename = require('gulp-rename');
 var del = require('del');
 
 gulp.task('html', function() {
   gulp.src('*.html')
+    .pipe(plumber())
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'))
     .pipe(server.stream());
@@ -49,17 +50,19 @@ gulp.task('script', function () {
 
 gulp.task('images', function () {
   gulp.src('img/**/*.{png,jpg,svg}')
+    .pipe(plumber())
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-  .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'));
 });
 
 gulp.task("fonts", function () {
-  gulp.src('fonts/*{woff,woff2}')
-  .pipe(gulp.dest("build/fonts"));
+  gulp.src('fonts/*.{woff,woff2}')
+    .pipe(plumber())
+    .pipe(gulp.dest("build/fonts"));
 });
 
 gulp.task('clean', function () {
