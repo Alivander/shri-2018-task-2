@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  min-width: 360px;
+  padding: 16px 21px 11px;
+  border-bottom: 1px solid #E9ECEF;
+}
+
+@media (min-width: 1280px) {
+
+  .header {
+    padding: 25px 25px 22px;
+  }
+  
+}
