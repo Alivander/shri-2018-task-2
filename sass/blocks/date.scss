@@ -1,0 +1,12 @@
+.date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  padding: 12px 16px;
+  border-bottom: 1px solid $grey-2;
+}
+
+.date__active-date {
+  @include font(15px, 1.2, 500);
+}
