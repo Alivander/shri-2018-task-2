@@ -6,10 +6,18 @@
   border-bottom: 1px solid $grey-2;
 }
 
+.header__button {
+  display: none;
+}
+
 @media (min-width: $large-screen) {
 
   .header {
     padding: 25px 25px 22px;
+  }
+
+  .header__button {
+    display: inline-block;
   }
 
 }
