@@ -1,9 +1,17 @@
 .page {}
 
 .page__date-time {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  display: block;
+}
+
+@media (min-width: $large-screen) {
+
+  .page__date-time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+  }
+
 }
