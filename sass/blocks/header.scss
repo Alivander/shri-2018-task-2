@@ -3,13 +3,13 @@
   justify-content: space-between;
   min-width: 360px;
   padding: 16px 21px 11px;
-  border-bottom: 1px solid #E9ECEF;
+  border-bottom: 1px solid $grey-2;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: $large-screen) {
 
   .header {
     padding: 25px 25px 22px;
   }
-  
+
 }
