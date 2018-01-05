@@ -4,6 +4,10 @@
   display: block;
 }
 
+.page__diagram {
+  position: relative;
+}
+
 @media (min-width: $large-screen) {
 
   .page__date-time {

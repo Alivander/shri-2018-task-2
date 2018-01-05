@@ -1,0 +1,22 @@
+.time-line {
+  position: absolute;
+  top: -6px;
+  left: 182px + 57px;
+  width: 1px;
+  height: calc(100% + 6px);
+  background-color: $blue-2;
+}
+
+.tiime-line__text {
+  position: absolute;
+  top: -20px;;
+  left: -25px;
+  width: 50px;
+  height: 20px;
+  padding: 4px 3px;
+  @include font(11px, 1.18, 700);
+  text-align: center;
+  color: #FFFFFF;
+  background-color: $blue-2;
+  border-radius: 10px;;
+}
