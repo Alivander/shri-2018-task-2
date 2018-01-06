@@ -1,0 +1,107 @@
+.diagram {
+  width: 1236px;
+  border-collapse: collapse;
+}
+
+.diagram:not(:last-of-type) {
+  border-bottom: 6px solid $grey-1;
+}
+
+.diagram__caption {
+  width: 100%;
+  padding: 15px 16px 8px;
+  @include font(11px, 1.18, 700);
+  text-align: left;
+  text-transform: uppercase;
+  color: $grey-7;
+  background-color: $grey-1;
+}
+
+.diagram__floor {
+  margin: 0;
+}
+
+.diagram__row {
+  display: flex;
+  width: 1236px;
+  border-bottom: 2px solid $grey-1;
+}
+
+.diagram__room {
+  width: 180px;
+  min-height: 58px;
+  padding: 12px 25px 12px 16px;
+  background-color: #FFFFFF;
+  border-right: 1px solid $grey-1;
+}
+
+.diagram__room-title {
+  width: 139px;
+  margin: 0;
+  margin-bottom: 1px;
+  @include font(15px, 1.13, 500);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.diagram__row:hover .diagram__room-title {
+  color: $blue-1;
+}
+
+.diagram__row--disabled .diagram__room-title {
+  color: $grey-7;
+}
+
+.diagram__room-capacity {
+  @include font(13px, 1.31);
+}
+
+.diagram__row--disabled .diagram__room-capacity {
+  color: $grey-7;
+}
+
+.diagram__events {
+  display: flex;
+  width: 1056px;
+  padding: 0;
+}
+
+.diagram__event {
+  flex-shrink: 0;
+  min-width: 10px;
+  height: 100%;
+  background-color: #D5DFE9;
+  cursor: pointer;
+}
+
+.diagram__event:focus,
+.diagram__event:hover {
+  background-color: $grey-6;
+}
+
+.diagram__event:active {
+  background-color: $grey-7;
+}
+
+.diagram__event-tooltip {}
+
+.diagram__off-time {
+  flex-shrink: 0;
+  flex-grow: 1;
+  height: 100%;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.diagram__off-time:hover .diagram__plus {
+  transform: scale(1);
+}
+
+.diagram__off-time:active {
+  background-color: $blue-3;
+}
+
+.diagram__plus {
+  transform: scale(0);
+}

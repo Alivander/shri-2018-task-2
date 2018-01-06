@@ -1,21 +1,3 @@
 .page {}
 
-.page__date-time {
-  display: block;
-}
-
-.page__diagram {
-  position: relative;
-}
-
-@media (min-width: $large-screen) {
-
-  .page__date-time {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 1280px;
-  }
-
-}
+@media (min-width: $large-screen) {}
