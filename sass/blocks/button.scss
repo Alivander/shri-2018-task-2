@@ -49,3 +49,32 @@
     background-color: $blue-4;
   }
 }
+
+.button--plus {
+  width: 58px;
+  height: 100%;
+  border-radius: 2px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #FFFFFF;
+  }
+
+  &::before {
+    width: 12px;
+    height: 2px;
+    margin-top: -1px;
+    margin-left: -6px;
+  }
+
+  &::after {
+    width: 2px;
+    height: 12px;
+    margin-top: -6px;
+    margin-left: -1px;
+  }
+}
