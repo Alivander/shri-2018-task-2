@@ -1,7 +1,8 @@
 .button {
   display: inline-block;
-  padding: 10px 16px;
-  @include font(13px, 1.23, 500);
+  padding: 13px 24px;
+  @include font(15px, 1.2, 500);
+  font-family: inherit;
   text-decoration: none;
   color: #000000;
   background-color: $grey-2;
@@ -9,37 +10,42 @@
   border-radius: 4px;
   box-shadow: none;
   cursor: pointer;
-}
 
-.button:focus,
-.button:hover {
-  color: inherit;
-  background-color: $grey-4;
-}
+  &:focus,
+  &:hover {
+    color: inherit;
+    background-color: $grey-4;
+  }
 
-.button:active {
-  color: inherit;
-  background-color: $grey-5;
+  &:active {
+    color: inherit;
+    background-color: $grey-5;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(0, 0, 0, 0.2);
+    background-color: $grey-3;
+  }
+
+  @media (min-width: $large-screen) {
+    padding: 10px 16px;
+    @include font(13px, 1.23, 500);
+  }
 }
 
 .button--blue {
   color: #FFFFFF;
   background-color: $blue-2;
-}
 
-.button--blue:focus,
-.button--blue:hover {
-  color: #FFFFFF;
-  background-color: $blue-3;
-}
+  &:focus,
+  &:hover {
+    color: #FFFFFF;
+    background-color: $blue-3;
+  }
 
-.button--blue:active {
-  color: #FFFFFF;
-  background-color: $blue-4;
-}
-
-.button:disabled,
-.button--disabled {
-  color: rgba(0, 0, 0, 0.2);
-  background-color: $grey-3;
+  &:active {
+    color: #FFFFFF;
+    background-color: $blue-4;
+  }
 }
