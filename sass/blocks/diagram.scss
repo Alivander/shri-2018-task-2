@@ -71,6 +71,7 @@
   flex-shrink: 0;
   min-width: 10px;
   height: 100%;
+  padding-top: 30px;
   background-color: #D5DFE9;
   cursor: pointer;
 }
@@ -80,11 +81,21 @@
   background-color: $grey-6;
 }
 
-.diagram__event:active {
+.diagram__event:active,
+.diagram__event--active {
   background-color: $grey-7;
 }
 
-.diagram__event-tooltip {}
+.diagram__tooltip {
+  position: absolute;
+  transform: scale(0);
+}
+
+.diagram__event--active .diagram__tooltip {
+  position: absolute;
+  z-index: 100;
+  transform: scale(1);
+}
 
 .diagram__off-time {
   flex-shrink: 0;
