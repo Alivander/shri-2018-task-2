@@ -8,8 +8,8 @@
   </head>
   <body class="page">
 
-    <header class="header">
-      <a class="logo header__logo">
+    <header class="header page__header">
+      <a class="logo">
         <img class="logo__img" src="img/logo.svg" width="174" height="25" alt="Яндекс Переговорки">
         <h1 class="visually-hidden">Яндекс Переговорки</h1>
       </a>
@@ -18,396 +18,400 @@
 
     <main class="page__main">
 
-      <section class="date page__date">
+      <div class="page__date">
 
-        <h2 class="visually-hidden">Выбор даты</h2>
+        <section class="date">
 
-        <button class="round-button round-button--prev" type="button">
-          <span class="visually-hidden">Предыдущий день</span>
-        </button>
-        <span class="date__active-date">14 дек · Сегодня</span>
-        <button class="round-button round-button--next" type="button">
-          <span class="visually-hidden">Следующий день</span>
-        </button>
+          <h2 class="visually-hidden">Выбор даты</h2>
 
-        <div class="calendar calendar--hidden calendar--shown">
-
-          <button class="round-button calendar__button-prev" type="button">
-            <span class="visually-hidden">Предыдущий месяц</span>
+          <button class="round-button round-button--prev" type="button">
+            <span class="visually-hidden">Предыдущий день</span>
+          </button>
+          <span class="date__active-date">14 дек · Сегодня</span>
+          <button class="round-button round-button--next" type="button">
+            <span class="visually-hidden">Следующий день</span>
           </button>
 
-          <div class="calendar__item">
-            <h2 class="calendar__item-title">Ноябрь · 2017</h2>
-            <ul class="calendar__day-names">
-              <li class="calendar__day-name">ПН</li>
-              <li class="calendar__day-name">ВТ</li>
-              <li class="calendar__day-name">СР</li>
-              <li class="calendar__day-name">ЧТ</li>
-              <li class="calendar__day-name">ПТ</li>
-              <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
-              <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
-            </ul>
-            <ul class="calendar__days">
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">1</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">2</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">3</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">4</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">5</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">6</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">7</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">8</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">9</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">10</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">11</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">12</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">13</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">14</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">15</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">16</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">17</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">18</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">19</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">20</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">21</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">22</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">23</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">24</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">25</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">26</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">27</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">28</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">29</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">30</a>
-              </li>
-            </ul>
+          <div class="calendar calendar--hidden calendar--shown">
+
+            <button class="round-button calendar__button-prev" type="button">
+              <span class="visually-hidden">Предыдущий месяц</span>
+            </button>
+
+            <div class="calendar__item">
+              <h2 class="calendar__item-title">Ноябрь · 2017</h2>
+              <ul class="calendar__day-names">
+                <li class="calendar__day-name">ПН</li>
+                <li class="calendar__day-name">ВТ</li>
+                <li class="calendar__day-name">СР</li>
+                <li class="calendar__day-name">ЧТ</li>
+                <li class="calendar__day-name">ПТ</li>
+                <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
+                <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
+              </ul>
+              <ul class="calendar__days">
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">1</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">2</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">3</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">4</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">5</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">6</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">7</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">8</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">9</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">10</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">11</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">12</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">13</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">14</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">15</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">16</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">17</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">18</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">19</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">20</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">21</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">22</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">23</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">24</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">25</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">26</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">27</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">28</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">29</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">30</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="calendar__item">
+              <h2 class="calendar__item-title">Декабрь · 2017</h2>
+              <ul class="calendar__day-names">
+                <li class="calendar__day-name">ПН</li>
+                <li class="calendar__day-name">ВТ</li>
+                <li class="calendar__day-name">СР</li>
+                <li class="calendar__day-name">ЧТ</li>
+                <li class="calendar__day-name">ПТ</li>
+                <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
+                <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
+              </ul>
+              <ul class="calendar__days">
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">1</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">2</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">3</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">4</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">5</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">6</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">7</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">8</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">9</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">10</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">11</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">12</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">13</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">14</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">15</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">16</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">17</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">18</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">19</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">20</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">21</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">22</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">23</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">24</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">25</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">26</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">27</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">28</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">29</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">30</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">31</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="calendar__item">
+              <h2 class="calendar__item-title">Январь · 2018</h2>
+              <ul class="calendar__day-names">
+                <li class="calendar__day-name">ПН</li>
+                <li class="calendar__day-name">ВТ</li>
+                <li class="calendar__day-name">СР</li>
+                <li class="calendar__day-name">ЧТ</li>
+                <li class="calendar__day-name">ПТ</li>
+                <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
+                <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
+              </ul>
+              <ul class="calendar__days">
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">1</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">2</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">3</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">4</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">5</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">6</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">7</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">8</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">9</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">10</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">11</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">12</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">13</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">14</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">15</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">16</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">17</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">18</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">19</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">20</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">21</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">22</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">23</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">24</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">25</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">26</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">27</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number calendar__day-number--weekend" href="#">28</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">29</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">30</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-number" href="#">31</a>
+                </li>
+              </ul>
+            </div>
+
+            <button class="round-button calendar__button-next" type="button">
+              <span class="visually-hidden">Следующий месяц</span>
+            </button>
+
           </div>
 
-          <div class="calendar__item">
-            <h2 class="calendar__item-title">Декабрь · 2017</h2>
-            <ul class="calendar__day-names">
-              <li class="calendar__day-name">ПН</li>
-              <li class="calendar__day-name">ВТ</li>
-              <li class="calendar__day-name">СР</li>
-              <li class="calendar__day-name">ЧТ</li>
-              <li class="calendar__day-name">ПТ</li>
-              <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
-              <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
-            </ul>
-            <ul class="calendar__days">
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">1</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">2</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">3</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">4</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">5</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">6</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">7</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">8</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">9</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">10</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">11</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">12</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">13</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">14</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">15</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">16</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">17</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">18</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">19</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">20</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">21</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">22</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">23</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">24</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">25</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">26</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">27</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">28</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">29</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">30</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">31</a>
-              </li>
-            </ul>
-          </div>
+        </section>
 
-          <div class="calendar__item">
-            <h2 class="calendar__item-title">Январь · 2018</h2>
-            <ul class="calendar__day-names">
-              <li class="calendar__day-name">ПН</li>
-              <li class="calendar__day-name">ВТ</li>
-              <li class="calendar__day-name">СР</li>
-              <li class="calendar__day-name">ЧТ</li>
-              <li class="calendar__day-name">ПТ</li>
-              <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
-              <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
-            </ul>
-            <ul class="calendar__days">
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">1</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">2</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">3</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">4</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">5</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">6</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">7</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">8</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">9</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">10</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">11</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">12</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">13</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">14</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">15</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">16</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">17</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">18</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">19</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">20</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">21</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">22</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">23</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">24</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">25</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">26</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">27</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number calendar__day-number--weekend" href="#">28</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">29</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">30</a>
-              </li>
-              <li class="calendar__day">
-                <a class="calendar__day-number" href="#">31</a>
-              </li>
-            </ul>
-          </div>
+      </div>
 
-          <button class="round-button calendar__button-next" type="button">
-            <span class="visually-hidden">Следующий месяц</span>
-          </button>
-
-        </div>
-
-      </section>
-
-      <section class="diagrams">
+      <section class="diagram">
 
         <h2 class="visually-hidden">График бронирования переговорок</h2>
 
-        <div class="diagrams__time-line">
-          <span class="diagrams__time-now">11:05</span>
+        <div class="diagram__time-line" style="left: 417px">
         </div>
 
-        <ul class="diagrams__time">
-          <li class="diagrams__hour diagrams__hour--disabled">8:00</li>
-          <li class="diagrams__hour diagrams__hour--disabled">9</li>
-          <li class="diagrams__hour diagrams__hour--disabled">10</li>
-          <li class="diagrams__hour diagrams__hour--disabled">11</li>
-          <li class="diagrams__hour">12</li>
-          <li class="diagrams__hour">13</li>
-          <li class="diagrams__hour">14</li>
-          <li class="diagrams__hour">15</li>
-          <li class="diagrams__hour">16</li>
-          <li class="diagrams__hour">17</li>
-          <li class="diagrams__hour">18</li>
-          <li class="diagrams__hour">19</li>
-          <li class="diagrams__hour">20</li>
-          <li class="diagrams__hour">21</li>
-          <li class="diagrams__hour">22</li>
-          <li class="diagrams__hour">23</li>
+        <ul class="diagram__time">
+          <li class="diagram__time-now" style="left: 417px">11:05</li>
+          <li class="diagram__hour diagram__hour--disabled">8:00</li>
+          <li class="diagram__hour diagram__hour--disabled">9</li>
+          <li class="diagram__hour diagram__hour--disabled">10</li>
+          <li class="diagram__hour diagram__hour--disabled">11</li>
+          <li class="diagram__hour">12</li>
+          <li class="diagram__hour">13</li>
+          <li class="diagram__hour">14</li>
+          <li class="diagram__hour">15</li>
+          <li class="diagram__hour">16</li>
+          <li class="diagram__hour">17</li>
+          <li class="diagram__hour">18</li>
+          <li class="diagram__hour">19</li>
+          <li class="diagram__hour">20</li>
+          <li class="diagram__hour">21</li>
+          <li class="diagram__hour">22</li>
+          <li class="diagram__hour">23</li>
         </ul>
 
-        <table class="diagram">
+        <table class="floor">
 
-          <caption class="diagram__caption">
-            <h3 class="diagram__floor">7 этаж</h3>
+          <caption class="floor__caption">
+            <h3 class="floor__number">7 этаж</h3>
           </caption>
 
-          <tbody class="diagram__body">
+          <tbody class="floor__body">
 
-            <tr class="diagram__row diagram__row--disabled">
-              <td class="diagram__room">
-                <h4 class="diagram__room-title">Ржавый Фред</h4>
-                <span class="diagram__room-capacity">3—6 человек</span>
+            <tr class="floor__row floor__row--disabled">
+              <td class="floor__room">
+                <h4 class="floor__room-title">Ржавый Фред</h4>
+                <span class="floor__room-capacity">3—6 человек</span>
               </td>
-              <td class="diagram__events">
-                <div class="diagram__event" style="width: 264px;">
-                  <div class="tooltip diagram__tooltip">
+              <td class="floor__events">
+                <div class="floor__event" style="width: 264px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -420,8 +424,8 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__event" style="width: 264px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 264px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -434,8 +438,8 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__event" style="width: 264px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 264px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -448,8 +452,8 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__event" style="width: 264px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 264px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -465,14 +469,14 @@
               </td>
             </tr>
 
-            <tr class="diagram__row">
-              <td class="diagram__room">
-                <h4 class="diagram__room-title">Прачечная</h4>
-                <span class="diagram__room-capacity">до 10 человек</span>
+            <tr class="floor__row">
+              <td class="floor__room">
+                <h4 class="floor__room-title">Прачечная</h4>
+                <span class="floor__room-capacity">до 10 человек</span>
               </td>
-              <td class="diagram__events">
-                <div class="diagram__event" style="width: 235px;">
-                  <div class="tooltip diagram__tooltip">
+              <td class="floor__events">
+                <div class="floor__event" style="width: 235px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -485,13 +489,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 200px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 200px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 350px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 350px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -504,8 +508,8 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__event" style="width: 271px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 271px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -521,14 +525,14 @@
               </td>
             </tr>
 
-            <tr class="diagram__row">
-              <td class="diagram__room">
-                <h4 class="diagram__room-title">Жёлтый дом</h4>
-                <span class="diagram__room-capacity">до 10 человек</span>
+            <tr class="floor__row">
+              <td class="floor__room">
+                <h4 class="floor__room-title">Жёлтый дом</h4>
+                <span class="floor__room-capacity">до 10 человек</span>
               </td>
-              <td class="diagram__events">
-                <div class="diagram__event" style="width: 235px;">
-                  <div class="tooltip diagram__tooltip">
+              <td class="floor__events">
+                <div class="floor__event" style="width: 235px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -541,13 +545,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 180px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 180px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 80px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 80px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -560,8 +564,8 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__event" style="width: 132px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 132px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -574,8 +578,8 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__event" style="width: 429px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 429px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -591,14 +595,14 @@
               </td>
             </tr>
 
-            <tr class="diagram__row diagram__row--disabled">
-              <td class="diagram__room">
-                <h4 class="diagram__room-title">Оранжевый тюльпан</h4>
-                <span class="diagram__room-capacity">до 10 человек</span>
+            <tr class="floor__row floor__row--disabled">
+              <td class="floor__room">
+                <h4 class="floor__room-title">Оранжевый тюльпан</h4>
+                <span class="floor__room-capacity">до 10 человек</span>
               </td>
-              <td class="diagram__events">
-                <div class="diagram__event" style="width: 264px;">
-                  <div class="tooltip diagram__tooltip">
+              <td class="floor__events">
+                <div class="floor__event" style="width: 264px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -611,8 +615,8 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__event" style="width: 264px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 264px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -625,8 +629,8 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__event" style="width: 264px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 264px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -639,8 +643,8 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__event" style="width: 264px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 264px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -659,22 +663,22 @@
           </tbody>
         </table>
 
-        <table class="diagram">
+        <table class="floor">
 
-          <caption class="diagram__caption">
-            <h3 class="diagram__floor">6 этаж</h3>
+          <caption class="floor__caption">
+            <h3 class="floor__number">6 этаж</h3>
           </caption>
 
-          <tbody class="diagram__body">
+          <tbody class="floor__body">
 
-            <tr class="diagram__row">
-              <td class="diagram__room">
-                <h4 class="diagram__room-title">Джокер</h4>
-                <span class="diagram__room-capacity">3—6 человек</span>
+            <tr class="floor__row">
+              <td class="floor__room">
+                <h4 class="floor__room-title">Джокер</h4>
+                <span class="floor__room-capacity">3—6 человек</span>
               </td>
-              <td class="diagram__events">
-                <div class="diagram__event" style="width: 235px;">
-                  <div class="tooltip diagram__tooltip">
+              <td class="floor__events">
+                <div class="floor__event" style="width: 235px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -687,13 +691,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 121px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 121px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 43px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 43px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -706,13 +710,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 119px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 119px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 100px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 100px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -725,13 +729,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 19px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 19px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 70px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 70px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -744,13 +748,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 103px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 103px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 246px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 246px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -766,14 +770,14 @@
               </td>
             </tr>
 
-            <tr class="diagram__row">
-              <td class="diagram__room">
-                <h4 class="diagram__room-title">Мариванна</h4>
-                <span class="diagram__room-capacity">3—6 человек</span>
+            <tr class="floor__row">
+              <td class="floor__room">
+                <h4 class="floor__room-title">Мариванна</h4>
+                <span class="floor__room-capacity">3—6 человек</span>
               </td>
-              <td class="diagram__events">
-                <div class="diagram__event" style="width: 370px;">
-                  <div class="tooltip diagram__tooltip">
+              <td class="floor__events">
+                <div class="floor__event" style="width: 370px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -786,13 +790,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 100px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 100px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 91px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 91px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -805,13 +809,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 59px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 59px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 60px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 60px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -824,93 +828,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 60px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 60px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 316px;">
-                  <div class="tooltip diagram__tooltip">
-                    <h5 class="tooltip__title">Рассуждения о высоком</h5>
-                    <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
-                    <p class="tooltip__users">
-                      <b class="user tooltip__first-user">
-                        <img class="user__avatar" src="https://avatarchamber.com/t/0/28/avatar-movie-star-wars-and-darth-vader-7kU.jpg" width="24" height="24" alt="Дарт Вейдер">
-                        Дарт Вейдер
-                      </b>
-                      и 12 участников
-                    </p>
-                    <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="diagram__row">
-              <td class="diagram__room">
-                <h4 class="diagram__room-title">Тонкий Боб</h4>
-                <span class="diagram__room-capacity">3—6 человек</span>
-              </td>
-              <td class="diagram__events">
-                <div class="diagram__event" style="width: 320px;">
-                  <div class="tooltip diagram__tooltip">
-                    <h5 class="tooltip__title">Рассуждения о высоком</h5>
-                    <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
-                    <p class="tooltip__users">
-                      <b class="user tooltip__first-user">
-                        <img class="user__avatar" src="https://avatarchamber.com/t/0/28/avatar-movie-star-wars-and-darth-vader-7kU.jpg" width="24" height="24" alt="Дарт Вейдер">
-                        Дарт Вейдер
-                      </b>
-                      и 12 участников
-                    </p>
-                    <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
-                  </div>
-                </div>
-                <div class="diagram__off-time" style="width: 80px;">
-                  <button class="button button--blue diagram__plus" type="button">
-                    <span class="visually-hidden">Создать встречу в этой переговорке</span>
-                  </button>
-                </div>
-                <div class="diagram__event" style="width: 200px;">
-                  <div class="tooltip diagram__tooltip">
-                    <h5 class="tooltip__title">Рассуждения о высоком</h5>
-                    <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
-                    <p class="tooltip__users">
-                      <b class="user tooltip__first-user">
-                        <img class="user__avatar" src="https://avatarchamber.com/t/0/28/avatar-movie-star-wars-and-darth-vader-7kU.jpg" width="24" height="24" alt="Дарт Вейдер">
-                        Дарт Вейдер
-                      </b>
-                      и 12 участников
-                    </p>
-                    <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
-                  </div>
-                </div>
-                <div class="diagram__off-time" style="width: 50px;">
-                  <button class="button button--blue diagram__plus" type="button">
-                    <span class="visually-hidden">Создать встречу в этой переговорке</span>
-                  </button>
-                </div>
-                <div class="diagram__event" style="width: 90px;">
-                  <div class="tooltip diagram__tooltip">
-                    <h5 class="tooltip__title">Рассуждения о высоком</h5>
-                    <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
-                    <p class="tooltip__users">
-                      <b class="user tooltip__first-user">
-                        <img class="user__avatar" src="https://avatarchamber.com/t/0/28/avatar-movie-star-wars-and-darth-vader-7kU.jpg" width="24" height="24" alt="Дарт Вейдер">
-                        Дарт Вейдер
-                      </b>
-                      и 12 участников
-                    </p>
-                    <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
-                  </div>
-                </div>
-                <div class="diagram__off-time" style="width: 200px;">
-                  <button class="button button--blue diagram__plus" type="button">
-                    <span class="visually-hidden">Создать встречу в этой переговорке</span>
-                  </button>
-                </div>
-                <div class="diagram__event" style="width: 116px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 316px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -926,14 +850,14 @@
               </td>
             </tr>
 
-            <tr class="diagram__row">
-              <td class="diagram__room">
-                <h4 class="diagram__room-title">Чёрная вдова</h4>
-                <span class="diagram__room-capacity">3—6 человек</span>
+            <tr class="floor__row">
+              <td class="floor__room">
+                <h4 class="floor__room-title">Тонкий Боб</h4>
+                <span class="floor__room-capacity">3—6 человек</span>
               </td>
-              <td class="diagram__events">
-                <div class="diagram__event" style="width: 280px;">
-                  <div class="tooltip diagram__tooltip">
+              <td class="floor__events">
+                <div class="floor__event" style="width: 320px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -946,13 +870,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 100px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 80px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 20px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 200px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -965,13 +889,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 120px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 50px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 100px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 90px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -984,32 +908,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 20px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 200px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 100px;">
-                  <div class="tooltip diagram__tooltip">
-                    <h5 class="tooltip__title">Рассуждения о высоком</h5>
-                    <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
-                    <p class="tooltip__users">
-                      <b class="user tooltip__first-user">
-                        <img class="user__avatar" src="https://avatarchamber.com/t/0/28/avatar-movie-star-wars-and-darth-vader-7kU.jpg" width="24" height="24" alt="Дарт Вейдер">
-                        Дарт Вейдер
-                      </b>
-                      и 12 участников
-                    </p>
-                    <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
-                  </div>
-                </div>
-                <div class="diagram__off-time" style="width: 60px;">
-                  <button class="button button--blue diagram__plus" type="button">
-                    <span class="visually-hidden">Создать встречу в этой переговорке</span>
-                  </button>
-                </div>
-                <div class="diagram__event" style="width: 256px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 116px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -1025,14 +930,14 @@
               </td>
             </tr>
 
-            <tr class="diagram__row">
-              <td class="diagram__room">
-                <h4 class="diagram__room-title">Белорусский ликёр</h4>
-                <span class="diagram__room-capacity">3—6 человек</span>
+            <tr class="floor__row">
+              <td class="floor__room">
+                <h4 class="floor__room-title">Чёрная вдова</h4>
+                <span class="floor__room-capacity">3—6 человек</span>
               </td>
-              <td class="diagram__events">
-                <div class="diagram__event" style="width: 270px;">
-                  <div class="tooltip diagram__tooltip">
+              <td class="floor__events">
+                <div class="floor__event" style="width: 280px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -1045,13 +950,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 75px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 100px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 275px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 20px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -1064,13 +969,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 20px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 120px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 20px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 100px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -1083,13 +988,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 15px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 20px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 25px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 100px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">
@@ -1102,13 +1007,112 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
-                <div class="diagram__off-time" style="width: 30px;">
-                  <button class="button button--blue diagram__plus" type="button">
+                <div class="floor__off-time" style="width: 60px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
-                <div class="diagram__event" style="width: 326px;">
-                  <div class="tooltip diagram__tooltip">
+                <div class="floor__event" style="width: 256px;">
+                  <div class="tooltip floor__tooltip">
+                    <h5 class="tooltip__title">Рассуждения о высоком</h5>
+                    <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="tooltip__users">
+                      <b class="user tooltip__first-user">
+                        <img class="user__avatar" src="https://avatarchamber.com/t/0/28/avatar-movie-star-wars-and-darth-vader-7kU.jpg" width="24" height="24" alt="Дарт Вейдер">
+                        Дарт Вейдер
+                      </b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="floor__row">
+              <td class="floor__room">
+                <h4 class="floor__room-title">Белорусский ликёр</h4>
+                <span class="floor__room-capacity">3—6 человек</span>
+              </td>
+              <td class="floor__events">
+                <div class="floor__event" style="width: 270px;">
+                  <div class="tooltip floor__tooltip">
+                    <h5 class="tooltip__title">Рассуждения о высоком</h5>
+                    <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="tooltip__users">
+                      <b class="user tooltip__first-user">
+                        <img class="user__avatar" src="https://avatarchamber.com/t/0/28/avatar-movie-star-wars-and-darth-vader-7kU.jpg" width="24" height="24" alt="Дарт Вейдер">
+                        Дарт Вейдер
+                      </b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
+                  </div>
+                </div>
+                <div class="floor__off-time" style="width: 75px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
+                    <span class="visually-hidden">Создать встречу в этой переговорке</span>
+                  </button>
+                </div>
+                <div class="floor__event" style="width: 275px;">
+                  <div class="tooltip floor__tooltip">
+                    <h5 class="tooltip__title">Рассуждения о высоком</h5>
+                    <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="tooltip__users">
+                      <b class="user tooltip__first-user">
+                        <img class="user__avatar" src="https://avatarchamber.com/t/0/28/avatar-movie-star-wars-and-darth-vader-7kU.jpg" width="24" height="24" alt="Дарт Вейдер">
+                        Дарт Вейдер
+                      </b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
+                  </div>
+                </div>
+                <div class="floor__off-time" style="width: 20px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
+                    <span class="visually-hidden">Создать встречу в этой переговорке</span>
+                  </button>
+                </div>
+                <div class="floor__event" style="width: 20px;">
+                  <div class="tooltip floor__tooltip">
+                    <h5 class="tooltip__title">Рассуждения о высоком</h5>
+                    <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="tooltip__users">
+                      <b class="user tooltip__first-user">
+                        <img class="user__avatar" src="https://avatarchamber.com/t/0/28/avatar-movie-star-wars-and-darth-vader-7kU.jpg" width="24" height="24" alt="Дарт Вейдер">
+                        Дарт Вейдер
+                      </b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
+                  </div>
+                </div>
+                <div class="floor__off-time" style="width: 15px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
+                    <span class="visually-hidden">Создать встречу в этой переговорке</span>
+                  </button>
+                </div>
+                <div class="floor__event" style="width: 25px;">
+                  <div class="tooltip floor__tooltip">
+                    <h5 class="tooltip__title">Рассуждения о высоком</h5>
+                    <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
+                    <p class="tooltip__users">
+                      <b class="user tooltip__first-user">
+                        <img class="user__avatar" src="https://avatarchamber.com/t/0/28/avatar-movie-star-wars-and-darth-vader-7kU.jpg" width="24" height="24" alt="Дарт Вейдер">
+                        Дарт Вейдер
+                      </b>
+                      и 12 участников
+                    </p>
+                    <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
+                  </div>
+                </div>
+                <div class="floor__off-time" style="width: 30px;">
+                  <button class="button button--blue button--plus floor__plus" type="button">
+                    <span class="visually-hidden">Создать встречу в этой переговорке</span>
+                  </button>
+                </div>
+                <div class="floor__event" style="width: 326px;">
+                  <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
                     <p class="tooltip__info">14 декабря, 15:00—17:00 · Жёлтый дом</p>
                     <p class="tooltip__users">

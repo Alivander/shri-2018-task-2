@@ -1,0 +1,137 @@
+.floor {
+  width: 1236px;
+  border-collapse: collapse;
+}
+
+.floor:not(:last-of-type) {
+  border-bottom: 6px solid $grey-1;
+}
+
+.floor__caption {
+  width: 100%;
+  padding: 15px 16px 8px;
+  @include font(11px, 1.18, 700);
+  text-align: left;
+  text-transform: uppercase;
+  color: $grey-7;
+  background-color: $grey-1;
+}
+
+.floor__number {
+  margin: 0;
+}
+
+.floor__row {
+  display: flex;
+  width: 1236px;
+  border-bottom: 2px solid $grey-1;
+}
+
+.floor__room {
+  width: 180px;
+  min-height: 58px;
+  padding: 12px 25px 12px 16px;
+  background-color: #FFFFFF;
+  border-right: 1px solid $grey-1;
+}
+
+.floor__room-title {
+  width: 139px;
+  margin: 0;
+  margin-bottom: 1px;
+  @include font(15px, 1.13, 500);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  &--tooltip {
+    position: absolute;
+    z-index: 5;
+    width: auto;
+    margin-top: -12px;
+    padding: 5px 8px 6px;
+    @include font(11px, 1.13, 500);
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 8px 0 rgba(0,44,92,0.28);
+    border-radius: 4px;
+  }
+}
+
+.floor__row:hover .floor__room-title {
+  color: $blue-1;
+}
+
+.floor__row--disabled .floor__room-title {
+  color: $grey-7;
+}
+
+.floor__room-capacity {
+  @include font(13px, 1.31);
+}
+
+.floor__row--disabled .floor__room-capacity {
+  color: $grey-7;
+}
+
+.floor__events {
+  display: flex;
+  width: 1056px;
+  padding: 0;
+}
+
+.floor__event {
+  flex-shrink: 0;
+  min-width: 10px;
+  height: 100%;
+  padding-top: 30px;
+  background-color: #D5DFE9;
+  cursor: pointer;
+}
+
+.floor__event:focus,
+.floor__event:hover {
+  background-color: $grey-6;
+}
+
+.floor__event:active,
+.floor__event--active {
+  background-color: $grey-7;
+}
+
+.floor__tooltip {
+  position: absolute;
+  transform: scale(0);
+}
+
+.floor__event--active .floor__tooltip {
+  position: absolute;
+  z-index: 100;
+  transform: scale(1);
+}
+
+.floor__off-time {
+  position: relative;
+  flex-shrink: 0;
+  flex-grow: 1;
+  height: 100%;
+  background-color: #FFFFFF;
+  overflow: hidden;
+
+  @media (min-width: $large-screen) {
+    &:hover .floor__plus {
+      transform: scale(1);
+    }
+  }
+}
+
+.floor__off-time:active {
+  background-color: $blue-3;
+}
+
+.floor__plus {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -29px;
+  transform: scale(0);
+}
