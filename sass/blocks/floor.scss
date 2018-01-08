@@ -61,6 +61,10 @@
   color: $blue-1;
 }
 
+.floor__row:active .floor__room-title {
+  color: $blue-3;
+}
+
 .floor__row--disabled .floor__room-title {
   color: $grey-7;
 }

@@ -38,3 +38,19 @@ var roomOnScroll = function (items) {
 window.addEventListener("scroll", function () {
   roomOnScroll(roomTitles);
 });
+
+var date = document.querySelector(".date");
+var dateActive = date.querySelector(".date__active-date");
+var dateCalendar = date.querySelector(".date__calendar");
+
+dateActive.addEventListener("click", function() {
+  dateCalendar.classList.toggle("calendar--shown");
+});
+
+dateCalendar.addEventListener("click", function (event) {
+  if (event.target.classList.contains("calendar__day-number")) {
+    setTimeout(function () {
+      dateCalendar.classList.remove("calendar--shown");
+    }, 350);
+  }
+});

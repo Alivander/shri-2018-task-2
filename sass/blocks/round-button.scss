@@ -7,6 +7,11 @@
   border-radius: 50px;
   box-shadow: none;
   cursor: pointer;
+
+  @media (min-width: $large-screen) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .round-button::before {
@@ -36,6 +41,10 @@
   background-image: url(../img/round-button--prev.svg);
   background-position: top 8px right 8px;
   background-size: 8.2px 14px;
+
+  @media (min-width: $large-screen) {
+
+  }
 }
 
 .round-button--next::before {
