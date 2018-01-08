@@ -17,9 +17,40 @@
     cursor: pointer;
   }
 
-  &__calendar {
-    position: absolute;
-    top: 100%;
+  &__overlay {
+    position: fixed;
+    top: 104px;
     left: 0;
+    z-index: 500;
+    width: 100vw;
+    height: calc(100vh - 104px);
+    background-color: rgba(0, 16, 33, 0.8);
+    opacity: 0;
+    transition-duration: 0.2s;
+    transform: scaleY(0);
+    transform-origin: center top;
+  }
+}
+
+.date__calendar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  transition-duration: 0.2s;
+  transform: scaleY(0);
+  transform-origin: center top;
+
+  &--shown {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@media (max-width: $large-screen) {
+  .date__calendar--shown + .date__overlay {
+    opacity: 1;
+    transform: scaleY(1);
   }
 }

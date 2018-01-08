@@ -41,16 +41,16 @@ window.addEventListener("scroll", function () {
 
 var date = document.querySelector(".date");
 var dateActive = date.querySelector(".date__active-date");
-var dateCalendar = date.querySelector(".date__calendar");
+var dateCalendar = date.querySelector(".calendar");
 
 dateActive.addEventListener("click", function() {
-  dateCalendar.classList.toggle("calendar--shown");
+  dateCalendar.classList.toggle("date__calendar--shown");
 });
 
 dateCalendar.addEventListener("click", function (event) {
   if (event.target.classList.contains("calendar__day-number")) {
     setTimeout(function () {
-      dateCalendar.classList.remove("calendar--shown");
+      dateCalendar.classList.remove("date__calendar--shown");
     }, 350);
   }
 });
