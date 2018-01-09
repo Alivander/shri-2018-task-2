@@ -28,6 +28,10 @@ body {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline-color: $blue-2;
+}
+
 a {
   color: $blue-2;
 }
