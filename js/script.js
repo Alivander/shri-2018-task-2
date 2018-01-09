@@ -54,3 +54,19 @@ dateCalendar.addEventListener("click", function (event) {
     }, 350);
   }
 });
+
+var event = document.querySelector(".event");
+var eventCalendarControl = event.querySelector(".event__calendar-contol");
+var eventCalendar = event.querySelector(".calendar");
+
+eventCalendarControl.addEventListener("click", function() {
+  eventCalendar.classList.toggle("event__calendar--shown");
+});
+
+eventCalendar.addEventListener("click", function (event) {
+  if (event.target.classList.contains("calendar__day-number")) {
+    setTimeout(function () {
+      eventCalendar.classList.remove("event__calendar--shown");
+    }, 350);
+  }
+});
