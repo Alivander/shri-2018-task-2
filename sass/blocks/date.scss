@@ -30,6 +30,15 @@
     transform: scaleY(0);
     transform-origin: center top;
   }
+
+  & .calendar__item:first-of-type,
+  & .calendar__item:last-of-type {
+    display: none;
+
+    @media (min-width: $large-screen) {
+      display: block;
+    }
+  }
 }
 
 .date__calendar {
@@ -38,7 +47,6 @@
   left: 0;
   z-index: 1000;
   opacity: 0;
-  transition-duration: 0.2s;
   transform: scaleY(0);
   transform-origin: center top;
 
