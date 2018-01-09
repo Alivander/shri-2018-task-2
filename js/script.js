@@ -70,3 +70,10 @@ eventCalendar.addEventListener("click", function (event) {
     }, 350);
   }
 });
+
+var eventOptionsControl = event.querySelector(".event__options-control");
+var eventOptions = event.querySelector(".event__options");
+
+eventOptionsControl.addEventListener("click", function() {
+  eventOptions.classList.toggle("event__calendar--shown");
+});
