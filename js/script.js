@@ -80,6 +80,7 @@ eventCalendarControl.addEventListener("click", function () {
 
 eventCalendar.addEventListener("click", function (evt) {
   if (evt.target.classList.contains("calendar__day-number")) {
+    evt.preventDefault();
     setTimeout(function () {
       eventCalendar.classList.remove("event__calendar--shown");
     }, 350);

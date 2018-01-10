@@ -6,7 +6,7 @@
   &__heading {
     max-width: 452px;
     margin: 0 auto 16px;
-    padding: 25px 16px 0;
+    padding-top: 25px;
     @include font(20px, 1.2, 700);
 
     @media (min-width: 904px) {
