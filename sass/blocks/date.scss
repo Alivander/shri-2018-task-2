@@ -30,15 +30,6 @@
     transform: scaleY(0);
     transform-origin: center top;
   }
-
-  & .calendar__item:first-of-type,
-  & .calendar__item:last-of-type {
-    display: none;
-
-    @media (min-width: $large-screen) {
-      display: block;
-    }
-  }
 }
 
 .date__calendar {
@@ -53,6 +44,15 @@
   &--shown {
     opacity: 1;
     transform: scaleY(1);
+  }
+}
+
+.date .calendar__month:first-of-type,
+.date .calendar__month:last-of-type {
+  display: none;
+
+  @media (min-width: $large-screen) {
+    display: block;
   }
 }
 

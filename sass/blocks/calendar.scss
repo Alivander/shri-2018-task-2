@@ -25,7 +25,7 @@
     right: 16px;
   }
 
-  &__item {
+  &__month {
     padding: 0 7px;
 
     @media (min-width: 1280px) {
@@ -42,24 +42,6 @@
 
   }
 
-  &__day-name {
-    width: 47px;
-    padding: 14px 0;
-    text-align: center;
-    @include font(19px, 1);
-    color: #000000;
-
-    &--weekend {
-      color: $blue-3;
-    }
-
-    @media (min-width: 1280px) {
-      width: 27px;
-      padding: 6px 0;
-      font-size: 14px;
-    }
-  }
-
   &__days {
     display: flex;
     flex-wrap: wrap;
@@ -69,7 +51,7 @@
   }
 }
 
-.calendar__month {
+.calendar__month-name {
   margin: 0;
   margin-bottom: 20px;
   padding: 6px 38px;
@@ -80,6 +62,60 @@
     margin-bottom: 10px;
     padding: 3px 24px 4px;
     font-size: 15px;
+  }
+}
+
+.calendar__day-number {
+  display: block;
+  width: 47px;
+  padding: 14px 0;
+  @include font(19px, 1, inherit);
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  cursor: default;
+
+  &[href] {
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:hover {
+    color: inherit;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 2px $grey-4;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--weekend {
+    color: $blue-3;
+  }
+
+  @media (min-width: 1280px) {
+    width: 27px;
+    padding: 6px 0;
+    font-size: 14px;
+  }
+}
+
+.calendar__day-name {
+  width: 47px;
+  padding: 14px 0;
+  text-align: center;
+  @include font(19px, 1);
+  color: #000000;
+
+  &--weekend {
+    color: $blue-3;
+  }
+
+  @media (min-width: 1280px) {
+    width: 27px;
+    padding: 6px 0;
+    font-size: 14px;
   }
 }
 
@@ -135,41 +171,5 @@
     @media (min-width: 1280px) {
       padding-left: 135px;
     }
-  }
-}
-
-.calendar__day-number {
-  display: block;
-  width: 47px;
-  padding: 14px 0;
-  @include font(19px, 1, inherit);
-  text-align: center;
-  text-decoration: none;
-  color: #000000;
-  cursor: default;
-
-  &[href] {
-    cursor: pointer;
-  }
-
-  &:focus,
-  &:hover {
-    color: inherit;
-    border-radius: 5px;
-    box-shadow: inset 0 0 0 2px $grey-4;
-  }
-
-  &:active {
-    opacity: 0.7;
-  }
-
-  &--weekend {
-    color: $blue-3;
-  }
-
-  @media (min-width: 1280px) {
-    width: 27px;
-    padding: 6px 0;
-    font-size: 14px;
   }
 }

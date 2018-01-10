@@ -1,38 +1,38 @@
 .floor {
   width: 1236px;
   border-collapse: collapse;
-}
 
-.floor:not(:last-of-type) {
-  border-bottom: 6px solid $grey-1;
-}
+  &:not(:last-of-type) {
+    border-bottom: 6px solid $grey-1;
+  }
 
-.floor__caption {
-  width: 100%;
-  padding: 15px 16px 8px;
-  @include font(11px, 1.18, 700);
-  text-align: left;
-  text-transform: uppercase;
-  color: $grey-7;
-  background-color: $grey-1;
-}
+  &__caption {
+    width: 100%;
+    padding: 15px 16px 8px;
+    @include font(11px, 1.18, 700);
+    text-align: left;
+    text-transform: uppercase;
+    color: $grey-7;
+    background-color: $grey-1;
+  }
 
-.floor__number {
-  margin: 0;
-}
+  &__number {
+    margin: 0;
+  }
 
-.floor__row {
-  display: flex;
-  width: 1236px;
-  border-bottom: 2px solid $grey-1;
-}
+  &__row {
+    display: flex;
+    width: 1236px;
+    border-bottom: 2px solid $grey-1;
+  }
 
-.floor__room {
-  width: 180px;
-  min-height: 58px;
-  padding: 12px 25px 12px 16px;
-  background-color: #FFFFFF;
-  border-right: 1px solid $grey-1;
+  &__room {
+    width: 180px;
+    min-height: 58px;
+    padding: 12px 25px 12px 16px;
+    background-color: #FFFFFF;
+    border-right: 1px solid $grey-1;
+  }
 }
 
 .floor__room-title {
@@ -57,6 +57,10 @@
   }
 }
 
+.floor__room-capacity {
+  @include font(13px, 1.31);
+}
+
 .floor__row:hover .floor__room-title {
   color: $blue-1;
 }
@@ -67,10 +71,6 @@
 
 .floor__row--disabled .floor__room-title {
   color: $grey-7;
-}
-
-.floor__room-capacity {
-  @include font(13px, 1.31);
 }
 
 .floor__row--disabled .floor__room-capacity {
@@ -90,27 +90,27 @@
   padding-top: 30px;
   background-color: #D5DFE9;
   cursor: pointer;
-}
 
-.floor__event:focus,
-.floor__event:hover {
-  background-color: $grey-6;
-}
+  &:focus,
+  &:hover {
+    background-color: $grey-6;
+  }
 
-.floor__event:active,
-.floor__event--active {
-  background-color: $grey-7;
+  &:active,
+  &--active {
+    background-color: $grey-7;
+  }
+
+  &--active .floor__tooltip {
+    position: absolute;
+    z-index: 100;
+    transform: scale(1);
+  }
 }
 
 .floor__tooltip {
   position: absolute;
   transform: scale(0);
-}
-
-.floor__event--active .floor__tooltip {
-  position: absolute;
-  z-index: 100;
-  transform: scale(1);
 }
 
 .floor__off-time {
@@ -121,15 +121,15 @@
   background-color: #FFFFFF;
   overflow: hidden;
 
+  &:active {
+    background-color: $blue-3;
+  }
+
   @media (min-width: $large-screen) {
     &:hover .floor__plus {
       transform: scale(1);
     }
   }
-}
-
-.floor__off-time:active {
-  background-color: $blue-3;
 }
 
 .floor__plus {

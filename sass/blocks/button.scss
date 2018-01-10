@@ -11,6 +11,11 @@
   box-shadow: none;
   cursor: pointer;
 
+  @media (min-width: $large-screen) {
+    padding: 10px 16px;
+    @include font(13px, 1.23, 500);
+  }
+
   &:focus,
   &:hover {
     color: inherit;
@@ -26,11 +31,6 @@
   &--disabled {
     color: rgba(0, 0, 0, 0.2);
     background-color: $grey-3;
-  }
-
-  @media (min-width: $large-screen) {
-    padding: 10px 16px;
-    @include font(13px, 1.23, 500);
   }
 }
 

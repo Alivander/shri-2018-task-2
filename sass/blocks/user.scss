@@ -20,14 +20,14 @@
       margin: 4px;
     }
   }
-}
 
-.user--small {
-  font-size: 13px;
-  line-height: 1.23;
+  &--small {
+    font-size: 13px;
+    line-height: 1.23;
 
-  & .user__avatar {
-    width: 24px;
-    height: 24px;
+    & .user__avatar {
+      width: 24px;
+      height: 24px;
+    }
   }
 }

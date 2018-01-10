@@ -23,7 +23,6 @@
         <section class="date">
 
           <h2 class="visually-hidden">Выбор даты</h2>
-
           <button class="round-button round-button--prev" type="button">
             <span class="visually-hidden">Предыдущий день</span>
           </button>
@@ -38,8 +37,10 @@
               <span class="visually-hidden">Предыдущий месяц</span>
             </button>
 
-            <div class="calendar__item">
-              <h2 class="calendar__month">Ноябрь · 2017</h2>
+            <div class="calendar__month">
+
+              <h2 class="calendar__month-name">Ноябрь · 2017</h2>
+
               <ul class="calendar__day-names">
                 <li class="calendar__day-name">ПН</li>
                 <li class="calendar__day-name">ВТ</li>
@@ -49,6 +50,7 @@
                 <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
                 <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
               </ul>
+
               <ul class="calendar__days">
                 <li class="calendar__day calendar__day--past" data-dayofweek="3">
                   <a class="calendar__day-number" href="#">1</a>
@@ -141,10 +143,13 @@
                   <a class="calendar__day-number" href="#">30</a>
                 </li>
               </ul>
+
             </div>
 
-            <div class="calendar__item">
-              <h2 class="calendar__month">Декабрь · 2017</h2>
+            <div class="calendar__month">
+
+              <h2 class="calendar__month-name">Декабрь · 2017</h2>
+
               <ul class="calendar__day-names">
                 <li class="calendar__day-name">ПН</li>
                 <li class="calendar__day-name">ВТ</li>
@@ -154,6 +159,7 @@
                 <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
                 <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
               </ul>
+
               <ul class="calendar__days">
                 <li class="calendar__day calendar__day--past" data-dayofweek="5">
                   <a class="calendar__day-number" href="#">1</a>
@@ -249,10 +255,13 @@
                   <a class="calendar__day-number calendar__day-number--weekend" href="#">31</a>
                 </li>
               </ul>
+
             </div>
 
-            <div class="calendar__item">
-              <h2 class="calendar__month">Январь · 2018</h2>
+            <div class="calendar__month">
+
+              <h2 class="calendar__month-name">Январь · 2018</h2>
+
               <ul class="calendar__day-names">
                 <li class="calendar__day-name">ПН</li>
                 <li class="calendar__day-name">ВТ</li>
@@ -262,6 +271,7 @@
                 <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
                 <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
               </ul>
+
               <ul class="calendar__days">
                 <li class="calendar__day"  data-dayofweek="1">
                   <a class="calendar__day-number" href="#">1</a>
@@ -375,8 +385,7 @@
 
         <h2 class="visually-hidden">График бронирования переговорок</h2>
 
-        <div class="diagram__time-line" style="left: 417px">
-        </div>
+        <div class="diagram__time-line" style="left: 417px"></div>
 
         <ul class="diagram__time">
           <li class="diagram__time-now" style="left: 417px">11:05</li>
@@ -407,11 +416,14 @@
           <tbody class="floor__body">
 
             <tr class="floor__row floor__row--disabled">
+
               <td class="floor__room">
                 <h4 class="floor__room-title">Ржавый Фред</h4>
                 <span class="floor__room-capacity">3—6 человек</span>
               </td>
+
               <td class="floor__events">
+
                 <div class="floor__event" style="width: 264px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -426,6 +438,7 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__event" style="width: 264px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -440,6 +453,7 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__event" style="width: 264px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -454,6 +468,7 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__event" style="width: 264px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -468,15 +483,20 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
               </td>
+
             </tr>
 
             <tr class="floor__row">
+
               <td class="floor__room">
                 <h4 class="floor__room-title">Прачечная</h4>
                 <span class="floor__room-capacity">до 10 человек</span>
               </td>
+
               <td class="floor__events">
+
                 <div class="floor__event" style="width: 235px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -491,11 +511,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 200px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 350px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -510,6 +532,7 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__event" style="width: 271px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -524,15 +547,20 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
               </td>
+
             </tr>
 
             <tr class="floor__row">
+
               <td class="floor__room">
                 <h4 class="floor__room-title">Жёлтый дом</h4>
                 <span class="floor__room-capacity">до 10 человек</span>
               </td>
+
               <td class="floor__events">
+
                 <div class="floor__event" style="width: 235px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -547,11 +575,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 180px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 80px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -566,6 +596,7 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__event" style="width: 132px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -580,6 +611,7 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__event" style="width: 429px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -594,15 +626,20 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
               </td>
+
             </tr>
 
             <tr class="floor__row floor__row--disabled">
+
               <td class="floor__room">
                 <h4 class="floor__room-title">Оранжевый тюльпан</h4>
                 <span class="floor__room-capacity">до 10 человек</span>
               </td>
+
               <td class="floor__events">
+
                 <div class="floor__event" style="width: 264px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -617,6 +654,7 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__event" style="width: 264px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -631,6 +669,7 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__event" style="width: 264px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -645,6 +684,7 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__event" style="width: 264px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -659,10 +699,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
               </td>
+
             </tr>
 
           </tbody>
+
         </table>
 
         <table class="floor">
@@ -674,11 +717,14 @@
           <tbody class="floor__body">
 
             <tr class="floor__row">
+
               <td class="floor__room">
                 <h4 class="floor__room-title">Джокер</h4>
                 <span class="floor__room-capacity">3—6 человек</span>
               </td>
+
               <td class="floor__events">
+
                 <div class="floor__event" style="width: 235px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -693,11 +739,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 121px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 43px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -712,11 +760,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 119px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 100px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -731,11 +781,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 19px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 70px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -750,11 +802,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 103px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 246px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -769,15 +823,20 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
               </td>
+
             </tr>
 
             <tr class="floor__row">
+
               <td class="floor__room">
                 <h4 class="floor__room-title">Мариванна</h4>
                 <span class="floor__room-capacity">3—6 человек</span>
               </td>
+
               <td class="floor__events">
+
                 <div class="floor__event" style="width: 370px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -792,11 +851,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 100px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 91px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -811,11 +872,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 59px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 60px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -830,11 +893,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 60px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 316px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -849,15 +914,20 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
               </td>
+
             </tr>
 
             <tr class="floor__row">
+
               <td class="floor__room">
                 <h4 class="floor__room-title">Тонкий Боб</h4>
                 <span class="floor__room-capacity">3—6 человек</span>
               </td>
+
               <td class="floor__events">
+
                 <div class="floor__event" style="width: 320px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -872,11 +942,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 80px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 200px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -891,11 +963,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 50px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 90px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -910,11 +984,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 200px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 116px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -929,15 +1005,20 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
               </td>
+
             </tr>
 
             <tr class="floor__row">
+
               <td class="floor__room">
                 <h4 class="floor__room-title">Чёрная вдова</h4>
                 <span class="floor__room-capacity">3—6 человек</span>
               </td>
+
               <td class="floor__events">
+
                 <div class="floor__event" style="width: 280px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -952,11 +1033,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 100px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 20px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -971,11 +1054,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 120px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 100px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -990,11 +1075,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 20px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 100px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -1009,11 +1096,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 60px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 256px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -1028,15 +1117,20 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
               </td>
+
             </tr>
 
             <tr class="floor__row">
+
               <td class="floor__room">
                 <h4 class="floor__room-title">Белорусский ликёр</h4>
                 <span class="floor__room-capacity">3—6 человек</span>
               </td>
+
               <td class="floor__events">
+
                 <div class="floor__event" style="width: 270px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -1051,11 +1145,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 75px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 275px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -1070,11 +1166,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 20px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 20px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -1089,11 +1187,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 15px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 25px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -1108,11 +1208,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
                 <div class="floor__off-time" style="width: 30px;">
                   <button class="button button--blue button--plus floor__plus" type="button">
                     <span class="visually-hidden">Создать встречу в этой переговорке</span>
                   </button>
                 </div>
+
                 <div class="floor__event" style="width: 326px;">
                   <div class="tooltip floor__tooltip">
                     <h5 class="tooltip__title">Рассуждения о высоком</h5>
@@ -1127,10 +1229,13 @@
                     <a class="round-button round-button--edit tooltip__edit" href="#"><span class="visually-hidden">Редактировать встречу</span></a>
                   </div>
                 </div>
+
               </td>
+
             </tr>
 
           </tbody>
+
         </table>
 
       </section>
@@ -1143,7 +1248,12 @@
 
         <h2 class="event__heading">Новая встреча</h2>
 
+        <button class="round-button round-button--reset event__close" type="reset">
+          <span class="visually-hidden">Отменить</span>
+        </button>
+
         <div class="event__fieldset">
+
           <div class="field event__name">
             <label class="field__label">
               <span class="field__text">Тема</span>
@@ -1153,6 +1263,7 @@
               <span class="visually-hidden">Очистить поле</span>
             </button>
           </div>
+
         </div>
 
         <div class="event__fieldset">
@@ -1173,8 +1284,10 @@
                 <span class="visually-hidden">Предыдущий месяц</span>
               </button>
 
-              <div class="calendar__item">
-                <h2 class="calendar__month">Декабрь · 2017</h2>
+              <div class="calendar__month">
+
+                <h2 class="calendar__month-name">Декабрь · 2017</h2>
+
                 <ul class="calendar__day-names">
                   <li class="calendar__day-name">ПН</li>
                   <li class="calendar__day-name">ВТ</li>
@@ -1184,6 +1297,7 @@
                   <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
                   <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
                 </ul>
+
                 <ul class="calendar__days">
                   <li class="calendar__day calendar__day--past" data-dayofweek="5">
                     <a class="calendar__day-number">1</a>
@@ -1279,10 +1393,13 @@
                     <a class="calendar__day-number calendar__day-number--weekend" href="#">31</a>
                   </li>
                 </ul>
+
               </div>
 
-              <div class="calendar__item">
-                <h2 class="calendar__month">Январь · 2018</h2>
+              <div class="calendar__month">
+
+                <h2 class="calendar__month-name">Январь · 2018</h2>
+
                 <ul class="calendar__day-names">
                   <li class="calendar__day-name">ПН</li>
                   <li class="calendar__day-name">ВТ</li>
@@ -1292,6 +1409,7 @@
                   <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
                   <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
                 </ul>
+
                 <ul class="calendar__days">
                   <li class="calendar__day"  data-dayofweek="1">
                     <a class="calendar__day-number" href="#">1</a>
@@ -1387,10 +1505,13 @@
                     <a class="calendar__day-number" href="#">31</a>
                   </li>
                 </ul>
+
               </div>
 
-              <div class="calendar__item">
-                <h2 class="calendar__month">Февраль · 2018</h2>
+              <div class="calendar__month">
+
+                <h2 class="calendar__month-name">Февраль · 2018</h2>
+
                 <ul class="calendar__day-names">
                   <li class="calendar__day-name">ПН</li>
                   <li class="calendar__day-name">ВТ</li>
@@ -1400,6 +1521,7 @@
                   <li class="calendar__day-name calendar__day-name--weekend">СБ</li>
                   <li class="calendar__day-name calendar__day-name--weekend">ВС</li>
                 </ul>
+
                 <ul class="calendar__days">
                   <li class="calendar__day"  data-dayofweek="4">
                     <a class="calendar__day-number" href="#">1</a>
@@ -1486,6 +1608,7 @@
                     <a class="calendar__day-number calendar__day-number--weekend" href="#">28</a>
                   </li>
                 </ul>
+
               </div>
 
               <button class="round-button round-button--next calendar__next" type="button">
@@ -1502,7 +1625,6 @@
               <span class="field__text">Начало</span>
               <input class="field__input" type="text" value="16:00" placeholder="00:00" required>
             </label>
-
             <label class="field event__end">
               <span class="field__text">Конец</span>
               <input class="field__input" type="text" value="16:30" placeholder="00:00" required>
@@ -1510,15 +1632,12 @@
 
           </div>
 
-          <button class="round-button round-button--reset event__reset-date" type="reset">
-            <span class="visually-hidden">Очистить дату и время</span>
-          </button>
-
         </div>
 
         <div class="event__fieldset">
 
           <div class="field event__select">
+
             <label class="field__label">
               <span class="field__text">Участники</span>
               <input class="field__input" type="text" value="" placeholder="Например, Тор Одинович" list="event-datalist">
@@ -1526,6 +1645,7 @@
             <button class="field__button field__button--select event__options-control" type="button">
               <span class="visually-hidden">Выбрать участников</span>
             </button>
+
             <ul class="field__options event__options">
               <li class="field__option">
                 <span class="user user--small">
@@ -1552,6 +1672,7 @@
                 </span>
               </li>
             </ul>
+
           </div>
 
           <ul class="field event__users">
@@ -1573,7 +1694,7 @@
                 </span>
               </label>
             </li>
-            <!-- <li class="field__label">
+            <li class="field__label">
               <label class="event__user">
                 <input class="visually-hidden" type="checkbox" name="Darth-Vader" checked>
                 <span class="user">
@@ -1581,7 +1702,7 @@
                   Дарт Вейдер<span class="user__home-floor">1 этаж</span>
                 </span>
               </label>
-            </li> -->
+            </li>
           </ul>
 
         </div>
@@ -1614,10 +1735,11 @@
       <a class="event__warning" href="#">Удалить встречу</a>
 
       <div class="event__footer">
-        <button class="button event__button" type="reset">Отмена</button>
-        <!-- <button class="button button--blue event__create" type="submit" disabled>Создать встречу</button> -->
-        <!-- <a class="button button--blue event__remove" href="#">Удалить встречу</a> -->
-        <button class="button button--blue event__save" type="submit">Сохранить</button>
+        <div class="event__container">
+          <button class="button event__button" type="reset">Отмена</button>
+          <!-- <a class="button button--blue event__remove" href="#">Удалить встречу</a> -->
+          <button class="button button--blue event__save" type="submit">Создать встречу</button>
+        </div>
       </div>
 
     </form>
