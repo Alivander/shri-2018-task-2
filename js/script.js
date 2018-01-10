@@ -1,3 +1,10 @@
+//При открытии страницы
+
+var mainPage = document.querySelector(".page__main");
+var eventPage = document.querySelector(".event");
+
+eventPage.style.display = "none";
+
 //Появление тултипа с информацией о встрече
 
 var events = document.querySelectorAll(".floor__event");
@@ -64,7 +71,6 @@ dateCalendar.addEventListener("click", function (event) {
 
 //Реализация окрытия календаря на странице встречи
 
-var eventPage = document.querySelector(".event");
 var eventCalendarControl = eventPage.querySelector(".event__calendar-contol");
 var eventCalendar = eventPage.querySelector(".calendar");
 
@@ -94,16 +100,16 @@ eventOptionsControl.addEventListener("click", function () {
 // Реализация открытия страницы с созданием встречи
 
 var headerButton = document.querySelector(".header__button");
-var mainPage = document.querySelector(".page__main");
-var eventRecomendation = eventPage.querySelector(".event__recommendation");
+var eventRecommendation = eventPage.querySelector(".event__recommendation");
+var eventWarning = eventPage.querySelector(".event__warning");
 
 headerButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  if (!eventPage.classList.contains("event--shown")) {
-    eventPage.classList.add("event--shown");
-  }
-  headerButton.classList.add("header__button--hidden");
-  eventRecomendation.classList.add("event__recommendation--hidden");
+  eventPage.removeAttribute('style');
+  mainPage.style.display = "none";
+  headerButton.style.display = "none";
+  eventRecommendation.style.display = "none";
+  eventWarning.style.display = "none";
 });
 
 //Закрытие страницы с встречей без сохранения
@@ -111,6 +117,9 @@ headerButton.addEventListener("click", function (evt) {
 var eventClose = eventPage.querySelector(".event__button[type=reset]");
 
 eventClose.addEventListener("click", function () {
-  eventPage.classList.remove("event--shown");
-  headerButton.classList.remove("header__button--hidden");
+  eventPage.style.display = "none";
+  mainPage.removeAttribute('style');
+  headerButton.removeAttribute('style');
+  eventRecommendation.removeAttribute('style');
+  eventWarning.removeAttribute('style');
 });

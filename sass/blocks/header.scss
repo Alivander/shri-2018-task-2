@@ -17,34 +17,14 @@
   &:not(:focus) {
     transform: scale(0);
 
-    @media (min-width: 500px) {
+    @media (min-width: $large-screen) {
       transform: none;
     }
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: $large-screen) {
     padding: 13px 24px;
     font-size: 15px;
     transform: none;
   }
-
-  &--hidden {
-    display: none;
-  }
 }
-
-
-
-// @media (min-width: $large-screen) {
-//
-//   .header {
-//     padding: 25px 25px 22px;
-//   }
-//
-//   .header__button {
-//     width: auto;
-//     height: auto;
-//     opacity: 1;
-//   }
-//
-// }

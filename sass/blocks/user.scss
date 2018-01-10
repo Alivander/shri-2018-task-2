@@ -1,7 +1,7 @@
 .user {
   display: flex;
   align-items: center;
-  @include font(15px, 1.13, 400);
+  @include font(15px, 1.13, inherit);
   color: #000000;
 
   &__avatar {
@@ -9,5 +9,25 @@
     height: 32px;
     margin-right: 8px;
     border-radius: 50%;
+  }
+
+  &__home-floor {
+    color: $grey-7;
+
+    &::before {
+      content: "·";
+      display: inline-block;
+      margin: 4px;
+    }
+  }
+}
+
+.user--small {
+  font-size: 13px;
+  line-height: 1.23;
+
+  & .user__avatar {
+    width: 24px;
+    height: 24px;
   }
 }
