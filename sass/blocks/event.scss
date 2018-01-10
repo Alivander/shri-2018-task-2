@@ -1,3 +1,346 @@
 .event {
-  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+
+  &__heading {
+    max-width: 452px;
+    margin: 0 auto 16px;
+    padding: 25px 16px 0;
+    @include font(20px, 1.2, 700);
+
+    @media (min-width: 904px) {
+      max-width: 904px;
+    }
+  }
+
+  &__main {
+    max-width: 904px;
+    margin: 0 auto;
+
+    @media (min-width: 904px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  }
+
+  &__footer {
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    background-color: #FFFFFF;
+  }
+
+  &__warning {
+    display: block;
+    padding: 16px 16px 20px;
+    @include font(15px, 1.2, 500);
+    color: #FF3333;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 8px solid $grey-2;
+
+    @media (min-width: 904px) {
+      display: none;
+    }
+  }
+
+  &__fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 16px 20px;
+    border-bottom: 8px solid $grey-2;
+
+    &:first-of-type {
+      padding: 0 16px;
+      border-bottom: none;
+    }
+  }
+
+  &__calendar-icon {
+    position: absolute;
+    top: 26px;
+    right: 21px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("../img/calendar.svg");
+    background-position: center center;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    cursor: pointer;
+    opacity: 0.3;
+
+    &:focus,
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  & .calendar__item:nth-of-type(2),
+  & .calendar__item:nth-of-type(3) {
+    display: none;
+
+    @media  (min-width: $large-screen) {
+      display: block;
+    }
+  }
+
+  &__reset-date {
+    display: none;
+
+    @media (min-width: 904px) {
+      position: absolute;
+      top: 73px;
+      right: 16px;
+      display: block;
+    }
+  }
+
+  &__options {
+    position: absolute;
+    top: 100%;
+    right: 2px;
+    z-index: 100;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: center top;
+
+    &--shown {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+
+  &__help {
+    position: sticky;
+    left: 0;
+    bottom: 76px;
+    width: 100%;
+
+    &::before {
+      content: attr(data-help);
+      display: block;
+      padding: 12px 16px 13px;
+      color: #FFFFFF;
+      @include font(15px, 1.2, 700);
+      text-align: left;
+      background-color: rgba(0, 16, 33, 0.8);
+    }
+
+    &[data-help=""] {
+      display: none;
+    }
+  }
+
+  &__button:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.event__date {
+  margin-bottom: 8px;
+
+  & .field__text::after {
+    content: (' и время');
+
+    @media (min-width: 904px) {
+      content: "";
+    }
+  }
+
+  & .field__input {
+    padding-right: 35px;
+  }
+}
+
+.event__calendar {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: center top;
+
+  @media (min-width: 392px) {
+    right: 16px;
+  }
+
+  &--shown {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+.event__time {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+
+  & .field__text {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+
+    @media (min-width: 904px) {
+      position: static;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.event__start,
+.event__end {
+  min-width: 72px;
+  width: 50%;
+  max-width: 226px;
+}
+
+.event__start {
+  position: relative;
+  padding-right: 11px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: -5px;
+    width: 10px;
+    height: 2px;
+    background-color: #000000;
+  }
+}
+
+.event__end {
+  padding-left: 11px;
+}
+
+.event__users {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  list-style: none;
+
+  &:empty {
+    display: none;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.event__user {
+  position: relative;
+  display: block;
+  margin-bottom: 8px;
+  background-color: $grey-2;
+  border-radius: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url("../img/field__reset.svg");
+    background-position: center center;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+
+  &:hover::after,
+  &:active::after {
+    opacity: 1;
+  }
+}
+
+.event__recommendation::before {
+  content: attr(data-heading);
+  display: block;
+  width: 100%;
+  max-width: 452px;
+  padding-bottom: 4px;
+  @include font(13px, 1.23, 700);
+}
+
+.event__variant {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 452px;
+  margin-bottom: 8px;
+  padding: 14px 12px 14px;
+  @include font(15px, 1.13);
+  background-color: $grey-2;
+  border-radius: 4px;
+
+  &:only-of-type {
+    color: #FFFFFF;
+    background-color: $blue-2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      bottom: 12px;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      background-image: url("../img/field__reset.svg");
+      background-position: center center;
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      filter: invert(1);
+      cursor: pointer;
+    }
+  }
+}
+
+.event__duration {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.event__floor::before {
+  content: "· ";
+}
+
+.event__variant-control:checked ~ .event__floor::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/reset.svg");
+  background-position: center center;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  filter: brightness(2);
 }
