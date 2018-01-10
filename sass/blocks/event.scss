@@ -4,6 +4,7 @@
   background-color: #FFFFFF;
 
   &__main {
+    position: relative;
     max-width: $medium-screen;
     margin: 0 auto;
 
@@ -31,26 +32,35 @@
     max-width: 452px;
     margin: 0 auto;
     text-align: right;
+
+    @media (min-width: $medium-screen) {
+      text-align: center;
+    }
   }
 }
 
 .event__heading {
-  max-width: 452px;
+  max-width: 484px;
   margin: 0 auto 16px;
-  padding-top: 25px;
+  padding: 25px 16px 0;
   @include font(20px, 1.2, 700);
 
   @media (min-width: $medium-screen) {
+    width: 100%;
     max-width: $medium-screen;
+    margin-bottom: 20px;
+    padding-top: 32px;
   }
 }
 
 .event__close {
   display: none;
+  width: 24px;
+  height: 24px;
 
   @media (min-width: $medium-screen) {
     position: absolute;
-    top: 73px;
+    top: 32px;
     right: 16px;
     display: block;
   }
@@ -68,6 +78,20 @@
     padding: 0 16px;
     border-bottom: none;
   }
+
+  @media (min-width: $medium-screen) {
+    align-items: flex-start;
+    flex-grow: 0;
+    margin-bottom: 24px;
+    padding: 0 16px;
+    width: 452px;
+    border: none;
+
+    &--row {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
 }
 
 .event__date {
@@ -81,8 +105,9 @@
     }
   }
 
-  & .field__input {
-    padding-right: 35px;
+  @media (min-width: $medium-screen) {
+    width: 238px;
+    margin: 0;
   }
 }
 
@@ -117,19 +142,20 @@
 .event__calendar {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: -16px;
   z-index: 100;
   opacity: 0;
-  transform: scaleY(0);
+  transform: scale(0.9, 0);
   transform-origin: center top;
 
   &--shown {
     opacity: 1;
-    transform: scaleY(1);
-  }
+    transform: scale(0.9);
 
-  @media (min-width: 392px) {
-    right: 16px;
+    @media (min-width: 392px) {
+      right: 2px;
+      transform: scaleY(1);
+    }
   }
 }
 
@@ -159,11 +185,18 @@
       transform: scale(1);
     }
   }
+
+  & .field__input {
+    padding-right: 10px;
+  }
+
+  @media (min-width: $medium-screen) {
+    width: 182px;
+  }
 }
 
 .event__start {
   position: relative;
-  min-width: 72px;
   width: 50%;
   max-width: 226px;
   padding-right: 11px;
@@ -171,29 +204,26 @@
   &::before {
     content: "";
     position: absolute;
-    top: 23px;
     right: -5px;
+    bottom: 19px;
     width: 10px;
     height: 2px;
     background-color: #000000;
   }
+
+  @media (min-width: $medium-screen) {
+    max-width: 99px;
+    padding-left: 16px;
+  }
 }
 
 .event__end {
-  min-width: 72px;
   width: 50%;
   max-width: 226px;
   padding-left: 11px;
-}
 
-.event__users {
-  margin: 0;
-  padding: 0;
-  padding-top: 10px;
-  list-style: none;
-
-  &:empty {
-    display: none;
+  @media (min-width: $medium-screen) {
+    max-width: 83px;
   }
 }
 
@@ -212,10 +242,30 @@
   }
 }
 
+.event__users {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  list-style: none;
+
+  &:empty {
+    display: none;
+  }
+
+  @media (min-width: $medium-screen) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 12px;
+  }
+}
+
 .event__user {
   position: relative;
   display: block;
+  flex-shrink: 0;
   margin-bottom: 8px;
+  padding-right: 38px;
   background-color: $grey-2;
   border-radius: 16px;
 
@@ -233,11 +283,27 @@
     background-repeat: no-repeat;
     opacity: 0.4;
     cursor: pointer;
+
+    @media (min-width: $medium-screen) {
+      right: 6px;
+      bottom: 2px;
+      background-size: 10px 10px;
+    }
   }
 
   &:hover::after,
   &:active::after {
     opacity: 1;
+  }
+
+  & .user__home-floor {
+    @media (min-width: $medium-screen) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $medium-screen) {
+    margin-right: 8px;
   }
 }
 
@@ -256,7 +322,7 @@
   width: 100%;
   max-width: 452px;
   margin-bottom: 8px;
-  padding: 14px 12px 14px;
+  padding: 14px 30px 14px 12px;
   @include font(15px, 1.13);
   background-color: $grey-2;
   border-radius: 4px;
@@ -281,12 +347,21 @@
       cursor: pointer;
     }
   }
+
+  @media (min-width: $medium-screen) {
+    padding: 13px 30px 11px 12px;
+    font-size: 13px;
+  }
 }
 
 .event__duration {
   display: inline-block;
   margin-right: 8px;
   font-weight: 700;
+
+  @media (min-width: $medium-screen) {
+    margin-right: 16px;
+  }
 }
 
 .event__floor::before {

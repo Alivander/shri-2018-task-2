@@ -94,7 +94,7 @@ var eventOptionsControl = eventPage.querySelector(".event__options-control");
 var eventOptions = eventPage.querySelector(".event__options");
 
 eventOptionsControl.addEventListener("click", function () {
-  eventOptions.classList.toggle("event__calendar--shown");
+  eventOptions.classList.toggle("event__options--shown");
 });
 
 

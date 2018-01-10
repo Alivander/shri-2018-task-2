@@ -9,6 +9,11 @@
     height: 32px;
     margin-right: 8px;
     border-radius: 50%;
+
+    @media (min-width: $medium-screen) {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   &__home-floor {
@@ -29,5 +34,9 @@
       width: 24px;
       height: 24px;
     }
+  }
+
+  @media (min-width: $medium-screen) {
+    font-size: 13px;
   }
 }

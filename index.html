@@ -1266,7 +1266,7 @@
 
         </div>
 
-        <div class="event__fieldset">
+        <div class="event__fieldset event__fieldset--row">
 
           <div class="field event__date">
 
@@ -1737,14 +1737,14 @@
       <div class="event__footer">
         <div class="event__container">
           <button class="button event__button" type="reset">Отмена</button>
-          <!-- <a class="button button--blue event__remove" href="#">Удалить встречу</a> -->
-          <button class="button button--blue event__save" type="submit">Создать встречу</button>
+          <!-- <a class="button button--blue event__button event__remove" href="#">Удалить встречу</a> -->
+          <button class="button button--blue event__button" type="submit">Создать встречу</button>
         </div>
       </div>
 
     </form>
 
-    <div class="modal">
+    <div class="modal" style="display: none;">
       <div class="modal__message modal__message--create">
         <b class="modal__title">Встреча создана!</b>
         <p class="modal__info">14 декабря, 15:00—17:00<br>Готем · 4 этаж</p>
@@ -1752,7 +1752,7 @@
       </div>
     </div>
 
-    <div class="modal">
+    <div class="modal" style="display: none;">
       <div class="modal__message modal__message--remove">
         <b class="modal__title">Встреча будет<br>удалена безвозвратно</b>
         <button class="button modal__button" type="button">Отмена</button>

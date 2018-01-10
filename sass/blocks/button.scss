@@ -11,7 +11,7 @@
   box-shadow: none;
   cursor: pointer;
 
-  @media (min-width: $large-screen) {
+  @media (min-width: $medium-screen) {
     padding: 10px 16px;
     @include font(13px, 1.23, 500);
   }
