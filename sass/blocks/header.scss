@@ -8,16 +8,32 @@
   padding: 16px 21px 11px;
   background-color: #FFFFFF;
   border-bottom: 1px solid $grey-2;
+}
 
-  &__button {
-    padding: 4px 8px;
-    font-size: 10px;
+.header__button {
+  padding: 4px 8px;
+  font-size: 10px;
+
+  &:not(:focus) {
+    transform: scale(0);
+
+    @media (min-width: 500px) {
+      transform: none;
+    }
   }
 
-  &__button:not(:focus) {
-    transform: scale(0);
+  @media (min-width: 500px) {
+    padding: 13px 24px;
+    font-size: 15px;
+    transform: none;
+  }
+
+  &--hidden {
+    display: none;
   }
 }
+
+
 
 // @media (min-width: $large-screen) {
 //
