@@ -28,8 +28,8 @@ body {
   box-sizing: inherit;
 }
 
-*:focus {
-  outline-color: $blue-2;
+:focus {
+  outline-color: rgba($blue-1, 0.5);
 }
 
 a {

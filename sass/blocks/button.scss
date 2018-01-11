@@ -10,6 +10,7 @@
   border-radius: 4px;
   box-shadow: none;
   cursor: pointer;
+  outline: none;
 
   @media (min-width: $medium-screen) {
     padding: 10px 16px;
@@ -28,9 +29,11 @@
   }
 
   &:disabled,
+  &:hover:disabled,
   &--disabled {
     color: rgba(0, 0, 0, 0.2);
     background-color: $grey-3;
+    cursor: default;
   }
 }
 

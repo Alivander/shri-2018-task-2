@@ -101,7 +101,9 @@
   color: $blue-3;
 }
 
-.floor__row--disabled .floor__room-title {
+.floor__row--disabled .floor__room-title,
+.floor__row--disabled:hover .floor__room-title,
+.floor__row--disabled:active .floor__room-title {
   color: $grey-7;
 }
 
@@ -113,6 +115,10 @@
   display: flex;
   width: 1056px;
   padding: 0;
+
+  @media (min-width: $large-screen) {
+    height: 28px;
+  }
 }
 
 .floor__event {
@@ -122,6 +128,7 @@
   padding-top: 30px;
   background-color: #D5DFE9;
   cursor: pointer;
+  outline: none;
 
   &:focus,
   &:hover {
@@ -158,6 +165,10 @@
   }
 
   @media (min-width: $large-screen) {
+    &:active {
+      background-color: #FFFFFF;
+    }
+
     &:hover .floor__plus {
       transform: scale(1);
     }
@@ -170,4 +181,8 @@
   left: 50%;
   margin-left: -29px;
   transform: scale(0);
+
+  &:focus {
+    transform: scale(1);
+  }
 }

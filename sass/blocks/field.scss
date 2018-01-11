@@ -22,12 +22,20 @@
     min-width: 100%;
     width: 72px;
     padding: 12px 30px 12px 10px;
-    @include font(15px, 1.13);
+    @include font(15px, 1.13, 500);
     font-family: inherit;
     border: 2px solid $grey-2;
     border-radius: 4px;
+    outline: none;
+
+
+    &:focus,
+    &:hover {
+      border-color: $blue-2;
+    }
 
     &::placeholder {
+      font-weight: 400;
       color: $grey-7;
     }
 
@@ -50,6 +58,7 @@
 
   &__option {
     padding: 5px 16px;
+    cursor: pointer;
   }
 
   &__option:active {
@@ -76,6 +85,7 @@
   box-shadow: none;
   opacity: 0.3;
   cursor: pointer;
+  outline: none;
 
   &:focus,
   &:hover {
@@ -103,7 +113,7 @@
   &--select {
     background-image: url("../img/round-button--next.svg");
     background-size: 7px 12px;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
   }
 
   @media (min-width: $medium-screen) {
