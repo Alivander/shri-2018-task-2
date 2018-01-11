@@ -1,34 +1,77 @@
-//При открытии страницы
-
-var mainPage = document.querySelector(".page__main");
+var mainPage = document.querySelector("main");
 var eventPage = document.querySelector(".event");
+var modal = document.querySelector(".modal");
 
-eventPage.style.display = "none";
+var headerButton = document.querySelector(".header__button");
 
-//Появление тултипа с информацией о встрече
+var room = mainPage.querySelector(".floor__room");
+var roomTitles = mainPage.querySelectorAll(".floor__room-title");
+var events = mainPage.querySelectorAll(".floor__event");
+var eventTooltips = mainPage.querySelectorAll(".tooltip");
+var slotsOffTime = mainPage.querySelectorAll(".floor__off-time");
+var date = mainPage.querySelector(".date");
+var dateActive = date.querySelector(".date__active-date");
+var dateCalendar = date.querySelector(".calendar");
 
-var events = document.querySelectorAll(".floor__event");
+var eventHeading = eventPage.querySelector(".event__heading");
+var eventCalendarControl = eventPage.querySelector(".event__calendar-contol");
+var eventCalendar = eventPage.querySelector(".calendar");
+var inputEventCandidate = eventPage.querySelector("#event-participants");
+var buttonOpenCandidates = eventPage.querySelector(".event__candidates-control");
+var buttonResetInputCandidate = inputEventCandidate.nextElementSibling;
+var inputEventName = eventPage.querySelector("#event-name");
+var buttonResetEventName = inputEventName.nextElementSibling;
+var eventCandidates = eventPage.querySelector(".event__candidates");
+var eventRecommendation = eventPage.querySelector(".event__recommendation");
+var eventVariants = eventRecommendation.querySelectorAll(".event__variant");
+var eventVariantInputs = eventRecommendation.querySelectorAll("input");
+var eventWarning = eventPage.querySelector(".event__warning");
+var buttonTopEventClose = eventPage.querySelector(".event__top-close");
+var buttonFooterEventClose = eventPage.querySelector(".event__footer-close");
+var buttonEventCreate = eventPage.querySelector(".event__create");
+var buttonEventSave = eventPage.querySelector(".event__save");
+var buttonEventRemove = eventPage.querySelector(".event__remove");
 
-var eventOnClick = function (item) {
+var modalEventCreate = modal.querySelector(".modal__message--create");
+var modalEventRemove = modal.querySelector(".modal__message--remove");
+var buttonModalOk = modal.querySelector(".modal__ok");
+var buttonModalCancel = modal.querySelector(".modal__candel");
+var buttonModalRemove = modal.querySelector(".modal__remove");
+
+
+var onClickToggle = function (item, classToggle, targerClass, targetFunc) {
   item.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    item.classList.toggle("floor__event--active");
+    evt.preventDefault ();
+    if (classToggle != "") {
+      item.classList.toggle(classToggle);
+    }
+    if (evt.target.classList.contains(targerClass)) {
+      targetFunc ();
+    }
   });
 };
 
-for (var i = 0; i < events.length; i++) {
-  var eventTooltip = events[i].querySelector(".tooltip");
-  var eventLeft = events[i].offsetWidth / 2 - eventTooltip.offsetWidth / 2;
-  eventTooltip.style.marginLeft = eventLeft + "px";
-  eventOnClick (events[i]);
+var eventOpen = function () {
+  eventPage.removeAttribute('style');
+  mainPage.style.display = "none";
+  headerButton.style.display = "none";
 };
+
+var eventClose = function () {
+  eventPage.style.display = "none";
+  mainPage.removeAttribute('style');
+  headerButton.removeAttribute('style');
+  eventRecommendation.removeAttribute('style');
+  eventWarning.removeAttribute('style');
+}
+
+
+//При открытии страницы
+
+eventPage.style.display = "none";
 
 
 //Появление плавающего тултипа с названием переговорки
-
-var diagram = document.querySelector(".diagram");
-var room = diagram.querySelector(".floor__room");
-var roomTitles = diagram.querySelectorAll(".floor__room-title");
 
 var roomOnScroll = function (items) {
   if (window.pageXOffset > room.offsetWidth) {
@@ -50,11 +93,7 @@ window.addEventListener("scroll", function () {
 });
 
 
-//Реализация открытия календаря на главной странице
-
-var date = document.querySelector(".date");
-var dateActive = date.querySelector(".date__active-date");
-var dateCalendar = date.querySelector(".calendar");
+//Открытие и закрытите календаря на главной странице
 
 dateActive.addEventListener("click", function () {
   dateCalendar.classList.toggle("date__calendar--shown");
@@ -69,10 +108,16 @@ dateCalendar.addEventListener("click", function (event) {
 });
 
 
-//Реализация окрытия календаря на странице встречи
+//Появление тултипа с информацией о встрече и переход на страницу встречи
 
-var eventCalendarControl = eventPage.querySelector(".event__calendar-contol");
-var eventCalendar = eventPage.querySelector(".calendar");
+for (var i = 0; i < events.length; i++) {
+  var eventLeft = events[i].offsetWidth / 2 - eventTooltips[i].offsetWidth / 2;
+  eventTooltips[i].style.marginLeft = eventLeft + "px";
+  onClickToggle (events[i], "floor__event--active", "tooltip__edit", eventOpen);
+};
+
+
+//Открытие и закрытите календаря на странице встречи
 
 eventCalendarControl.addEventListener("click", function () {
   eventCalendar.classList.toggle("event__calendar--shown");
@@ -80,47 +125,118 @@ eventCalendarControl.addEventListener("click", function () {
 
 eventCalendar.addEventListener("click", function (evt) {
   if (evt.target.classList.contains("calendar__day-number")) {
-    evt.preventDefault();
-    setTimeout(function () {
+    evt.preventDefault ();
+    setTimeout (function () {
       eventCalendar.classList.remove("event__calendar--shown");
     }, 350);
   }
 });
 
 
-//Реализация открытия списка возможных участников на странице всречи
-
-var eventOptionsControl = eventPage.querySelector(".event__options-control");
-var eventOptions = eventPage.querySelector(".event__options");
-
-eventOptionsControl.addEventListener("click", function () {
-  eventOptions.classList.toggle("event__options--shown");
-});
-
-
-// Реализация открытия страницы с созданием встречи
-
-var headerButton = document.querySelector(".header__button");
-var eventRecommendation = eventPage.querySelector(".event__recommendation");
-var eventWarning = eventPage.querySelector(".event__warning");
+//Открытие страницы с созданием встречи при клике на кнопку в шапке
 
 headerButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  eventPage.removeAttribute('style');
-  mainPage.style.display = "none";
-  headerButton.style.display = "none";
-  eventRecommendation.style.display = "none";
+  evt.preventDefault ();
+  eventOpen ();
+  // eventRecommendation.style.display = "none";
   eventWarning.style.display = "none";
 });
 
-//Закрытие страницы с встречей без сохранения
 
-var eventClose = eventPage.querySelector(".event__button[type=reset]");
+//Открытие страницы с созданием встречи при клике на свободном слоте
 
-eventClose.addEventListener("click", function () {
-  eventPage.style.display = "none";
-  mainPage.removeAttribute('style');
-  headerButton.removeAttribute('style');
-  eventRecommendation.removeAttribute('style');
-  eventWarning.removeAttribute('style');
+for (var i = 0; i < slotsOffTime.length; i++) {
+  onClickToggle (slotsOffTime[i], "", "floor__plus", eventOpen);
+}
+
+
+//Открытие и закрытие списка возможных участников на странице всречи
+
+inputEventCandidate.addEventListener("focus", function () {
+  eventCandidates.classList.add("event__candidates--shown");
+  buttonOpenCandidates.removeAttribute('style');
+});
+
+inputEventCandidate.addEventListener("blur", function () {
+  if (eventCandidates.classList.contains("event__candidates--shown")) {
+    eventCandidates.classList.remove("event__candidates--shown");
+    buttonOpenCandidates.style.display = "none";
+  };
+  if (inputEventCandidate.value) {
+    buttonResetInputCandidate.removeAttribute('style');
+  } else {
+    buttonResetInputCandidate.style.display = "none";
+  };
+});
+
+buttonOpenCandidates.addEventListener("click", function () {
+  if (eventCandidates.classList.contains("event__candidates--shown")) {
+    eventCandidates.classList.remove("event__candidates--shown");
+  };
+});
+
+
+//Появление кнопки сброса при вводе темы встречи
+
+inputEventName.addEventListener("input", function () {
+  if (inputEventName.value) {
+    buttonResetEventName.removeAttribute('style');
+  } else {
+    buttonResetEventName.style.display = "none";
+  };
+});
+
+
+//Выбор переговорки из предложенных
+
+var variantOnClick = function (item) {
+  item.addEventListener("click", function (evt) {
+    evt.preventDefault ();
+    var input = item.querySelector("input");
+    if (!input.checked) {
+      eventRecommendation.dataset.heading = "Ваша переговорка";
+      input.checked = true;
+      item.classList.add("event__variant--active");
+      for (var i = 0; i < eventVariants.length; i++) {
+        if (!eventVariants[i].classList.contains("event__variant--active")) {
+          eventVariants[i].style.display = "none";
+        };
+      };
+    } else {
+      eventRecommendation.dataset.heading = "Рекомендованные переговорки";
+      input.checked = false;
+      for (var i = 0; i < eventVariants.length; i++) {
+        eventVariants[i].removeAttribute('style');
+        eventVariants[i].classList.remove("event__variant--active");
+      };
+    };
+  });
+};
+
+for (var i = 0; i < eventVariants.length; i++) {
+  variantOnClick(eventVariants[i]);
+};
+
+
+//Закрытие страницы встречи без сохранения
+
+buttonTopEventClose.addEventListener("click", function () {
+  eventClose ();
+});
+
+buttonFooterEventClose.addEventListener("click", function () {
+  eventClose ();
+});
+
+
+//Закрытие страницы встречи c появлением модального окна
+
+modal.addEventListener("click", function (evt) {
+  if (evt.target.classList.contains("modal__remove")) {
+    eventPage.submit();
+    eventClose ();
+    modal.style.display = "none";
+  } else if (evt.target.classList.contains("modal__button")) {
+    modal.style.display = "none";
+  };
 });
