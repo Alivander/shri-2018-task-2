@@ -1898,6 +1898,9 @@ img {
     background-color: rgba(0, 16, 33, 0.8); }
   .event__help[data-help=""] {
     display: none; }
+  @media (min-width: 904px) {
+    .event__help {
+      display: none; } }
 
 .event__button:not(:last-child) {
   margin-right: 15px; }

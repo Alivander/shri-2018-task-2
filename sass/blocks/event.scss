@@ -423,6 +423,10 @@
   &[data-help=""] {
     display: none;
   }
+
+  @media (min-width: $medium-screen) {
+    display: none;
+  }
 }
 
 .event__button:not(:last-child) {
