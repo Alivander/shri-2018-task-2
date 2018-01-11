@@ -6,6 +6,12 @@
     border-bottom: 6px solid $grey-1;
   }
 
+  @media (min-width: $large-screen) {
+    &:not(:last-of-type) {
+      border:none;
+    }
+  }
+
   &__caption {
     width: 100%;
     padding: 15px 16px 8px;
@@ -14,6 +20,12 @@
     text-transform: uppercase;
     color: $grey-7;
     background-color: $grey-1;
+
+    @media (min-width: $large-screen) {
+      width: 245px;
+      padding: 6px 25px 8px;
+      background-color: #FFFFFF;
+    }
   }
 
   &__number {
@@ -24,6 +36,12 @@
     display: flex;
     width: 1236px;
     border-bottom: 2px solid $grey-1;
+
+    @media (min-width: $large-screen) {
+      width: 1301px;
+      margin-bottom: 8px;
+      border: none;
+    }
   }
 
   &__room {
@@ -32,11 +50,25 @@
     padding: 12px 25px 12px 16px;
     background-color: #FFFFFF;
     border-right: 1px solid $grey-1;
+
+    @media (min-width: $large-screen) {
+      width: 245px;
+      min-height: 44px;
+      padding: 0 16px 0 25px;
+    }
+  }
+
+  @media (min-width: $large-screen) {
+    width: 1301px;
+
+    &:first-of-type {
+      margin-top: 16px;
+    }
   }
 }
 
 .floor__room-title {
-  width: 139px;
+  width: 100%;
   margin: 0;
   margin-bottom: 1px;
   @include font(15px, 1.13, 500);

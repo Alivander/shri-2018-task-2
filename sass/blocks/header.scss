@@ -1,4 +1,8 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 600;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +12,14 @@
   padding: 16px 21px 11px;
   background-color: #FFFFFF;
   border-bottom: 1px solid $grey-2;
+
+  @media (min-width: $large-screen) {
+    position: sticky;
+    min-height: 72px;
+    padding: 19px 25px 17px;
+    font-size: 15px;
+    transform: none;
+  }
 }
 
 .header__button {
@@ -23,8 +35,8 @@
   }
 
   @media (min-width: $large-screen) {
-    padding: 13px 24px;
-    font-size: 15px;
+    padding: 10px 16px;
+    font-size: 13px;
     transform: none;
   }
 }

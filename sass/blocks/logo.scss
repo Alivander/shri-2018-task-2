@@ -5,14 +5,10 @@
     display: block;
     width: 149px;
     height: 21px;
+
+    @media (min-width: $large-screen) {
+      width: 174px;
+      height: 25px;
+    }
   }
 }
-
-// @media (min-width: $large-screen) {
-//
-//   .logo__img {
-//     width: 174px;
-//     height: 25px;
-//   }
-//
-// }

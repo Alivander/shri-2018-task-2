@@ -2,16 +2,12 @@
   display: block;
   width: 32px;
   height: 32px;
+  padding: 0;
   background-color: $grey-2;
   border: none;
   border-radius: 50px;
   box-shadow: none;
   cursor: pointer;
-
-  @media (min-width: $large-screen) {
-    width: 24px;
-    height: 24px;
-  }
 
   &:focus,
   &:hover {
@@ -47,13 +43,13 @@
 
   &--prev::before {
     background-image: url(../img/round-button--prev.svg);
-    background-position: top 8px right 8px;
+    background-position: top 9px right 13px;
     background-size: 8.2px 14px;
   }
 
   &--next::before {
     background-image: url(../img/round-button--next.svg);
-    background-position: top 8px left 8px;
+    background-position: top 9px left 13px;
     background-size: 8.2px 14px;
   }
 
@@ -70,5 +66,20 @@
   &--reset::before {
     background-image: url("../img/field__reset.svg");
     background-size: 10px 10px;
+  }
+
+  @media (min-width: $large-screen) {
+    width: 24px;
+    height: 24px;
+
+    &--prev::before {
+      background-position: top 7px right 10px;
+      background-size: 6.5px 10px;
+    }
+
+    &--next::before {
+      background-position: top 7px left 10px;
+      background-size: 6.5px 10px;
+    }
   }
 }

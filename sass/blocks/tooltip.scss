@@ -17,16 +17,29 @@
     border-left: 7px solid transparent;
   }
 
+  @media (min-width: $large-screen) {
+    width: 338px;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 10px;
     @include font(20px, 1.2, 700);
+
+    @media (min-width: $large-screen) {
+      font-size: 15px;
+      margin-bottom: 7px;
+    }
   }
 
   &__info {
     margin: 0;
     margin-bottom: 15px;
     @include font(15px, 1.13);
+
+    @media (min-width: $large-screen) {
+      font-size: 13px;
+    }
   }
 
   &__users {
@@ -45,5 +58,10 @@
     position: absolute;
     top: 16px;
     right: 16px;
+
+    @media (min-width: $large-screen) {
+      top: 8px;
+      right: 8px;
+    }
   }
 }
