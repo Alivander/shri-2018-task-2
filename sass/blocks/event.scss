@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
+  padding-top: 49px;
   background-color: #FFFFFF;
 
   &__main {
@@ -44,6 +45,7 @@
     text-align: right;
 
     @media (min-width: $medium-screen) {
+      padding-top: 0;
       text-align: center;
     }
   }
