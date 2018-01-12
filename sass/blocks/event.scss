@@ -7,6 +7,10 @@
   padding-top: 49px;
   background-color: #FFFFFF;
 
+  @media (min-width: $large-screen) {
+    padding-top: 0;
+  }
+
   &__main {
     position: relative;
     width: 100%;

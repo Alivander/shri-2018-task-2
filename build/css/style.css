@@ -1506,6 +1506,9 @@ img {
   min-height: 100vh;
   padding-top: 49px;
   background-color: #FFFFFF; }
+  @media (min-width: 1280px) {
+    .event {
+      padding-top: 0; } }
   .event__main {
     position: relative;
     width: 100%;
