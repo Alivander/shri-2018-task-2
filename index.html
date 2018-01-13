@@ -1244,7 +1244,7 @@
 
     </main>
 
-    <form class="event" method="get" action="https://echo.ru">
+    <form class="event" method="get" action="https://echo.ru" style="display: none;">
 
       <div class="event__main">
 
@@ -1681,8 +1681,8 @@
           </div>
 
           <ul class="field event__users">
-            <li class="field__label">
-              <label class="event__user">
+            <li class="event__user">
+              <label class="field__label">
                 <input class="visually-hidden" type="checkbox" name="Leks-Luter" checked>
                 <span class="user">
                   <img class="user__avatar" src="http://store.bogi.ru/user_ava/120/14869/m1366477303_9448.jpg" width="24" height="24" alt="Лекс Лютер">
@@ -1690,8 +1690,8 @@
                 </span>
               </label>
             </li>
-            <li class="field__label">
-              <label class="event__user">
+            <li class="event__user">
+              <label class="field__label">
                 <input class="visually-hidden" type="checkbox" name="Tomas-Andersor" checked>
                 <span class="user">
                   <img class="user__avatar" src="https://pp.userapi.com/c837335/v837335840/56653/kst4XkMWblk.jpg" width="24" height="24" alt="Томас Андерсон">
@@ -1699,8 +1699,8 @@
                 </span>
               </label>
             </li>
-            <li class="field__label">
-              <label class="event__user">
+            <li class="event__user">
+              <label class="field__label">
                 <input class="visually-hidden" type="checkbox" name="Darth-Vader" checked>
                 <span class="user">
                   <img class="user__avatar" src="https://avatarchamber.com/t/0/28/avatar-movie-star-wars-and-darth-vader-7kU.jpg" width="24" height="24" alt="Дарт Вейдер">
@@ -1737,14 +1737,14 @@
 
       <div class="event__help" data-help="Выберите переговорку"></div>
 
-      <a class="event__warning" href="#">Удалить встречу</a>
+      <a class="event__warning" href="#" style="display: none;">Удалить встречу</a>
 
       <div class="event__footer">
         <div class="event__container">
           <button class="button event__button event__footer-close" type="reset">Отмена</button>
-          <button class="button button--blue event__button event__remove" href="#" style="display: none;">Удалить встречу</button>
-          <button class="button event__button event__save" type="submit" style="display: none;">Сохранить</button>
-          <button class="button button--blue event__button event__create" type="submit">Создать встречу</button>
+          <button class="button event__button event__remove" href="#" style="display: none;">Удалить встречу</button>
+          <button class="button button--blue event__button event__save" type="submit" style="display: none;">Сохранить</button>
+          <button class="button button--blue event__button event__create" type="submit" disabled>Создать встречу</button>
         </div>
       </div>
 

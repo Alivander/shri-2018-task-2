@@ -33,7 +33,7 @@
     flex-wrap: wrap;
     width: 100%;
     margin-top: auto;
-    padding: 16px;
+    padding: 16px 8px 22px;
     background-color: #FFFFFF;
 
     @media (min-width: $medium-screen) {
@@ -98,7 +98,7 @@
   @media (min-width: $medium-screen) {
     align-items: flex-start;
     flex-grow: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     padding: 0 16px;
     width: 452px;
     border: none;
@@ -285,6 +285,10 @@
   background-color: $grey-2;
   border-radius: 16px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -344,7 +348,12 @@
   border-radius: 4px;
   cursor: pointer;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &--active {
+    margin-bottom: 0;
     color: #FFFFFF;
     background-color: $blue-2;
 
@@ -392,7 +401,7 @@
 .event__warning {
   display: block;
   width: 100%;
-  padding: 16px 16px 20px;
+  padding: 18px 16px 20px;
   @include font(15px, 1.2, 500);
   color: #FF3333;
   background-color: #FFFFFF;
@@ -435,6 +444,14 @@
   }
 }
 
-.event__button:not(:last-child) {
-  margin-right: 15px;
+.event__button {
+  margin: 0 8px;
+}
+
+.event__remove {
+  display: none;
+
+  @media (min-width: $medium-screen) {
+    display: inline-block;
+  }
 }

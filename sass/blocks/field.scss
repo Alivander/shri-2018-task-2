@@ -21,7 +21,7 @@
     display: block;
     min-width: 100%;
     width: 72px;
-    padding: 12px 30px 12px 10px;
+    padding: 12px 30px 12px 8px;
     @include font(15px, 1.13, 500);
     font-family: inherit;
     border: 2px solid $grey-2;
@@ -40,7 +40,7 @@
     }
 
     @media (min-width: $medium-screen) {
-      padding: 10px 30px 10px 10px;
+      padding: 10px 30px 10px 8px;
       font-size: 13px;
       letter-spacing: 0.47px;
     }
