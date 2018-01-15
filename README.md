@@ -51,11 +51,11 @@ npm i
 npm run start  //Сборка папки "build" и запуск локального сервера
 ```
 
-Главная страница:
-Страница создания встречи:
-Страница редактирования встречи:
-Страница создания встречи с модальным окном:
-Страница редактирования встречи с модальным окном: 
+Главная страница: https://alivander.github.io/shri-2018-task-2/build/index.html
+Страница создания встречи: https://alivander.github.io/shri-2018-task-2/build/event-create.html
+Страница редактирования встречи: https://alivander.github.io/shri-2018-task-2/build/event-edit.html
+Страница создания встречи с модальным окном: https://alivander.github.io/shri-2018-task-2/build/event-create-modal.html
+Страница редактирования встречи с модальным окном: https://alivander.github.io/shri-2018-task-2/build/event-edit-modal.html
 
 1. Изучаем ТЗ и макеты.
 2. Скачиваем и конвертируем необходимые шрифты.
